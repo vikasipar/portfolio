@@ -166,18 +166,27 @@ h6 {
 
 #ct-site-img {
   border: 6px solid rgb(2, 2, 150);
+  transition: 0.4s;
 }
 #bot-site-img {
   border: 6px solid rgb(0, 212, 231);
+  transition: 0.4s;
 }
 #dashboard-site-img {
   border: 6px solid rgb(0, 140, 255);
+  transition: 0.4s;
 }
 #gift-site-img {
   border: 6px solid rgb(244, 0, 244);
+  transition: 0.4s;
+}
+#weather-site-img {
+  border: 6px solid rgb(255, 81, 0);
+  transition: 0.4s;
 }
 #portfolio-site-img {
   border: 6px solid orange;
+  transition: 0.4s;
 }
 
 /* about-section */
