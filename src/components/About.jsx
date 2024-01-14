@@ -37,7 +37,7 @@ function About() {
           whileInView={{x:0, opacity:1}}
           whileHover={{y:-20}}
           transition={{duration:1.5, delay:0.3}}
-          src="/src/assets/vikas.jpeg" alt="chatbot" className='w-[80%] md:w-[60%] lg:w-[35%] mb-5 mx-auto rounded border-r-4 lg:border-r-[#ffc445]' />
+          src="/static/vikas.jpeg" alt="chatbot" className='w-[80%] md:w-[60%] lg:w-[35%] mb-5 mx-auto rounded border-r-4 lg:border-r-[#ffc445]' />
         </div>
 
         <motion.h3 
@@ -60,7 +60,7 @@ function About() {
         initial={{y:80, opacity:0}}
         whileInView={{y:0, opacity:1}}
         transition={{duration:1.5, delay:0.3}}
-        src="/src/assets/caretracker.jpeg" alt="chatbot" className='w-[80%] lg:w-[60%] mx-auto' />
+        src="/static/caretracker.jpeg" alt="chatbot" className='w-[80%] lg:w-[60%] mx-auto' />
         <motion.p 
         initial={{y:80, opacity:0}}
         whileInView={{y:0, opacity:1}}
@@ -80,7 +80,7 @@ function About() {
         initial={{y:80, opacity:0}}
         whileInView={{y:0, opacity:1}}
         transition={{duration:1.5, delay:0.3}}
-        src="/src/assets/chatbot.jpg" alt="chatbot" className='w-[80%] lg:w-[60%] mx-auto' />
+        src="/static/chatbot.jpg" alt="chatbot" className='w-[80%] lg:w-[60%] mx-auto' />
         <motion.p 
         initial={{y:80, opacity:0}}
         whileInView={{y:0, opacity:1}}

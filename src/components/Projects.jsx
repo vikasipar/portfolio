@@ -13,7 +13,7 @@ const Projects = () => {
       github: "https://github.com/vikasipar/ecommerce-app",
       stack: "React.js, Redux Toolkit, Tailwind CSS, Firebase, FakeStoreAPI",
       desc: "I crafted dynamic React.js components styled with Tailwind CSS, enabling intuitive product listing and filtering via FakeStoreAPI. Utilizing Redux Toolkit, I efficiently managed state for seamless cart operations. Firebase integration ensures secure user authentication with email and password login.",
-      img: "/src/assets/ezmart-mockup.png",
+      img: "/static/ezmart-mockup.png",
     },
     {
       id: 2,
@@ -22,7 +22,7 @@ const Projects = () => {
       github: "https://github.com/vikasipar/youtube-clone",
       stack: "React.js, Tailwind CSS, YouTube Data Integration",
       desc: "I led frontend development and API integration using React.js, Tailwind CSS, and YouTube Data. Created a video player for seamless YouTube video streaming. Designed a user-friendly search bar. Ensured responsiveness for diverse screen sizes.",
-      img: "/src/assets/youtube-clone-mockup.jpeg",
+      img: "/static/youtube-clone-mockup.jpeg",
     },
     {
       id: 3,
@@ -31,7 +31,7 @@ const Projects = () => {
       github: "https://github.com/vikasipar/chat-app",
       stack: "Node.js, React.js, Tailwind CSS, Socket.io",
       desc: " Leveraging React.js, I delivered a dynamic frontend experience, incorporating the react-scroll-to-bottom library and Tailwind CSS for responsive user interfaces. Additionally, I implemented Socket.io to facilitate swift and real-time interactions. On the backend, I developed a robust system using Node.js and Express.js to handle seamless communication between users.",
-      img: "/src/assets/chatapp-mockup.png",
+      img: "/static/chatapp-mockup.png",
     },
     
     {
@@ -41,7 +41,7 @@ const Projects = () => {
       github: "https://github.com/vikasipar/superhero-app",
       stack: "React.js, Tailwind CSS, Superhero API",
       desc: "I developed the Superhero App, a dynamic web application using React.js and Tailwind CSS. Leveraging the Superhero API, I implemented features that allow users to explore details about their favorite superheroes. The project showcases my skills in frontend development, user interface design, and API integration.",
-      img: "/src/assets/superhero-mockup.jpeg",
+      img: "/static/superhero-mockup.jpeg",
     },
   ];
 
