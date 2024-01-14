@@ -19,8 +19,8 @@ const Hero = () => {
         transition={{delay:1.3, ease:'easeIn', duration:1.6, type:"spring"}}
         className='lg:w-[43%] lg:ml-48 items-center space-y-8'>
                 
-                <h1 className='text-5xl xl:text-7xl mt-9 text-center lg:text-left font-bold text-[#1f4167]/90'>Hello, I'm Vikas.</h1>
-                <p className='w-[90%] mx-auto text-xl md:text-2xl text-justify text-[#8d9094]'>I'm a <span className='text-[#fca319] font-bold text-2xl md:text-3xl'>front-end developer</span> with experience in many different languages, and technologies. I'm always looking for new challenges to tackle.</p>
+                <h1 className='text-4xl xl:text-7xl mt-9 text-center lg:text-left font-bold text-[#1f4167]/90'>Hello, I'm Vikas.</h1>
+                <p className='w-[86%] mx-auto text-lg md:text-2xl text-justify text-[#8d9094]'>I'm a <span className='text-[#fca319] font-bold text-2xl md:text-3xl'>front-end developer</span> with experience in many different languages, and technologies. I'm always looking for new challenges to tackle.</p>
 
         </motion.div>
 

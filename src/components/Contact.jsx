@@ -3,8 +3,15 @@ import { motion } from 'framer-motion';
 import { FaLinkedin, FaTwitterSquare } from "react-icons/fa";
 import { FaSquareGithub } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
+import emailjs from '@emailjs/browser';
 
 function Contact() {
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+        alert("Message Sent.");
+        emailjs.sendForm(import.meta.env.VITE_SEVICEID, import.meta.env.VITE_TEMPLATEID, e.target, import.meta.env.VITE_EMAILJS_PUBLICKEY)
+    }
 
   return (
     <div className='lg:flex flex-wrap items-center w-[90%] lg:w-[80%] lg:h-[90vh] lg:ml-[13%] overflow-hidden'>
@@ -26,29 +33,30 @@ function Contact() {
             </div>
         </motion.div>
 
-        <motion.div 
+        <motion.form 
+        onSubmit={sendEmail}
         initial={{x:-150, opacity:0}}
         whileInView={{x:0, opacity:1}}
         transition={{duration:1.5, delay:0.3}}
         className='w-[90%] lg:w-[50%] mx-auto text-lg lg:text-3xl flex-wrap mt-5 md:mt-0'>
             <div className='flex items-center leading-loose'>
-                <label>Hi, I'm </label>
-                <input type='text' placeholder='Name*' className='border-b-2 border-black text-[#1f4167] mx-2 w-[14rem] md:w-[26rem] outline-none' required/>
+                <label htmlFor='sender'>Hi, I'm </label>
+                <input type='text' placeholder='Name*' name='sender' id='sender' className='border-b-2 border-black text-[#1f4167] mx-2 w-[14rem] md:w-[26rem] outline-none' required/>
             </div>
             <div className='flex flex-wrap items-center leading-loose'>
-                <label className=''>and I work with </label>
-                <input className='outline-none ml-1 w-[11rem] md:w-[20rem] border-b-2 border-black text-[#1f4167]' type='text' placeholder='Company*' required/>
+                <label className='' htmlFor='from'>and I work with </label>
+                <input name='from' id='from' className='outline-none ml-1 w-[11rem] md:w-[20rem] border-b-2 border-black text-[#1f4167]' type='text' placeholder='Company*' required/>
             </div>
             <div className='flex flex-wrap items-center leading-loose'>
-                <label className=''>You can reach me at </label>
-                <input className='outline-none ml-1 w-[19rem] lg:w-[16.5rem] border-b-2 border-black text-[#1f4167]' type='email' placeholder='Email*' required/>
+                <label className='' htmlFor='email_from'>You can reach me at </label>
+                <input className='outline-none ml-1 w-[19rem] lg:w-[16.5rem] border-b-2 border-black text-[#1f4167]' type='email' name='email_from' id='email_from' placeholder='Email*' required/>
             </div>
-            <input className='w-full outline-none border-b-2 border-black leading-loose text-[#1f4167]' placeholder='Message*' required/><br/>
+            <input className='w-full outline-none border-b-2 border-black leading-loose text-[#1f4167]' placeholder='Message*' id='message' name='message' required/><br/>
             <div className='flex lg:hidden w-fit mx-auto'>
                 <button className='my-9 bg-[#fca319]/90 px-5 py-1 rounded-lg'>Send Message</button>
             </div>
-            <button className='hidden lg:block my-9 bg-[#fca319]/90 px-5 py-1 rounded-lg'>Send Message</button>
-        </motion.div>
+            <button type='submit' className='hidden lg:block my-9 bg-[#fca319]/90 px-5 py-1 rounded-lg'>Send Message</button>
+        </motion.form>
 
     </div>
   )

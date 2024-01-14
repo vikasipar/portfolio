@@ -10,7 +10,7 @@ function Footer() {
     whileInView={{opacity:1, y:0}}
     transition={{duration:0.7, delay:0.2}}
     className='w-full h-52 mt-16 flex flex-col-reverse md:flex-row justify-around items-center overflow-hidden bg-[#797c80]'>
-        <motion.span className='text-[#fcb419] md:text-[#fffefe]/70 text-base md:text-2xl pl-32 flex items-center' whileHover={{scale: 1.1}} transition={{repeat: 4, repeatType: "reverse",duration:0.9}}>Made with <FaHeart className='mx-2 text-[#fcb419]' /> by Vikas Ipar.</motion.span>
+        <motion.span className='text-[#fcb419] md:text-[#fffefe]/70 text-lg md:text-2xl pl-32 flex items-center' whileHover={{scale: 1.1}} transition={{repeat: 4, repeatType: "reverse",duration:0.9}}>Made with <FaHeart className='mx-2 text-[#fcb419]' /> by Vikas Ipar.</motion.span>
         <div className='flex space-x-20 md:space-x-28'>
             <div className='text-base md:text-xl font-bold text-[#fffefe]/60'>
                 <h5 className='uppercase mb-2 md:mb-4'>Navigate</h5>
