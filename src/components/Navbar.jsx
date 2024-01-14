@@ -70,7 +70,7 @@ const Navbar = () => {
                             whileHover={{x:30}}
                             transition={{duration:0.5, type:"spring", stiffness:130}}
                             className='cursor-pointer'>
-                            <a href='https://drive.google.com/file/d/1OeGeaj1e8o4eRxs2S3UITbH0PP3dIo4U/view?usp=sharing' target='_blank'>Resume</a> 
+                            <a href='https://drive.google.com/file/d/1gwq4dXgKB4OWC_0pBeBr2z2zb3CHG7q-/view?usp=sharing' target='_blank'>Resume</a> 
                         </motion.li>
                 </motion.ul>
         </motion.div>
