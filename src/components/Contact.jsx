@@ -26,9 +26,9 @@ function Contact() {
                 <p className='text-xl lg:text-2xl text-[#fca319]'>Let's make it true!</p>
             </div>
             <div className='space-x-5 flex items-center text-xl lg:text-3xl text-[#1f4167]'>
-                <a href='https://in.linkedin.com/in/vikas-ipar-705b6922a' target='_blank' title='https://in.linkedin.com/in/vikas-ipar-705b6922a'><FaLinkedin/></a>
-                <a href='https://github.com/vikasipar' title='https://github.com/vikasipar' target='_blank'><FaSquareGithub/></a>
-                <a href='#' target='_blank'><FaTwitterSquare/></a>
+                <a href='https://in.linkedin.com/in/vikas-ipar-705b6922a' target='_blank' title='linkedin.com/in/vikas-ipar'><FaLinkedin/></a>
+                <a href='https://github.com/vikasipar' title='github.com/vikasipar' target='_blank'><FaSquareGithub/></a>
+                <a href='https://x.com/vikas_ipar?t=xdfw_bSJLdFN8dykcCSWZw&s=08' title='x.com/vikas_ipar' target='_blank'><FaTwitterSquare/></a>
                 <a href='mailto:vikasipar.scoe.it@gmail.com' title='vikasipar.scoe.it@gmail.com' target='_blank'><MdEmail/></a>
             </div>
         </motion.div>
