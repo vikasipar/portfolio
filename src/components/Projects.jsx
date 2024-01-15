@@ -47,7 +47,11 @@ const Projects = () => {
 
   return (
 <>
-      <h1 className='w-full pl-2 lg:pl-32 text-4xl mt-9 lg:mt-20 xl:mt-9 md:mt-0 md:text-5xl xl:text-6xl text-[#1f4167]'>Projects</h1>
+      <motion.h1 
+        initial={{y:100, opacity:0}}
+        whileInView={{y:0, opacity:1}}
+        transition={{duration:1}}
+        className='w-full pl-2 lg:pl-32 text-4xl mt-9 lg:mt-20 xl:mt-9 md:mt-0 md:text-5xl xl:text-6xl text-[#1f4167]'>Projects</motion.h1>
       {
       projectdata.map(project => (
         <div key={`${project.id}`} className='w-[86vw] md:flex items-center mx-auto text-base lg:ml-24 mb-16 md:mb-4 lg:mb-10 xl:mb-5 overflow-hidden'>

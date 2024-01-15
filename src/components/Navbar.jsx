@@ -35,13 +35,13 @@ const Navbar = () => {
             animate={{x:0}}
             exit={{x:-500}}
             transition={{duration:0.8, ease:"easeInOut"}} 
-            // onExitComplete={() => null}
             className='fixed w-full md:w-[50vw] md:ml-[5.5rem] h-full bg-white/90 text-[#1f4167] z-20 overflow-hidden top-0' >
                 <motion.ul
                     className='space-y-14 text-4xl md:text-5xl my-28 text-center md:text-left md:ml-48'>
                         <motion.li
-                            whileHover={{x:30}}
-                            transition={{duration:0.5, type:"spring", stiffness:130}}
+                            initial={{opacity:0, x:-100}}
+                            whileInView={{opacity:1, x:0}}
+                            transition={{duration:0.9,delay:0.4, type:"spring", stiffness:130}}
                             className='cursor-pointer'>
                             <NavLink to="/" 
                                 onClick={() => navState.setIsNavVisible(!navState.isNavVisible)}
@@ -49,8 +49,9 @@ const Navbar = () => {
                                 color: isActive && "#fca319"})}>Home</NavLink>
                         </motion.li>
                         <motion.li
-                            whileHover={{x:30}}
-                            transition={{duration:0.5, type:"spring", stiffness:130}}
+                            initial={{opacity:0, x:-100}}
+                            whileInView={{opacity:1, x:0}}
+                            transition={{duration:0.9,delay:0.7, type:"spring", stiffness:130}}
                             className='cursor-pointer'>
                             <NavLink to="/about" 
                                 onClick={() => navState.setIsNavVisible(!navState.isNavVisible)}
@@ -58,8 +59,9 @@ const Navbar = () => {
                                 color: isActive && "#fca319"})}>About</NavLink>
                         </motion.li>
                         <motion.li
-                            whileHover={{x:30}}
-                            transition={{duration:0.5, type:"spring", stiffness:130}}
+                            initial={{opacity:0, x:-100}}
+                            whileInView={{opacity:1, x:0}}
+                            transition={{duration:0.9,delay:0.9, type:"spring", stiffness:130}}
                             className='cursor-pointer'>
                             <NavLink to="/contact" 
                                 onClick={() => navState.setIsNavVisible(!navState.isNavVisible)}
@@ -67,8 +69,9 @@ const Navbar = () => {
                                 color: isActive && "#fca319"})}>Contact</NavLink>
                         </motion.li>
                         <motion.li
-                            whileHover={{x:30}}
-                            transition={{duration:0.5, type:"spring", stiffness:130}}
+                            initial={{opacity:0, x:-100}}
+                            whileInView={{opacity:1, x:0}}
+                            transition={{duration:0.9,delay:1.1, type:"spring", stiffness:130}}
                             className='cursor-pointer'>
                             <a href='https://drive.google.com/file/d/1gwq4dXgKB4OWC_0pBeBr2z2zb3CHG7q-/view?usp=sharing' target='_blank'>Resume</a> 
                         </motion.li>

@@ -10,7 +10,7 @@ function Contact() {
     const sendEmail = (e) => {
         e.preventDefault();
         alert("Message Sent.");
-        emailjs.sendForm(import.meta.env.VITE_SEVICEID, import.meta.env.VITE_TEMPLATEID, e.target, import.meta.env.VITE_EMAILJS_PUBLICKEY)
+        emailjs.sendForm(import.meta.env.VITE_SEVICEID, import.meta.env.VITE_TEMPLATEID, e.target, import.meta.env.VITE_EMAILJS_PUBLICKEY);
     }
 
   return (
