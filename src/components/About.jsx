@@ -15,7 +15,7 @@ import { motion } from 'framer-motion';
 
 function About() {
   return (
-    <div className='w-[95%] mx-auto lg:w-[80%] lg:ml-[15%]'>
+    <div className='w-[95%] mx-auto lg:w-[80%] lg:ml-[15%] overflow-x-hidden'>
         <motion.h1 
         initial={{x:-250, opacity:0}}
         whileInView={{x:0, opacity:1}}
@@ -37,7 +37,7 @@ function About() {
           whileInView={{x:0, opacity:1}}
           whileHover={{y:-20}}
           transition={{duration:1.5, delay:0.3}}
-          src="/static/vikas.jpeg" alt="chatbot" className='w-[80%] md:w-[60%] lg:w-[35%] mb-5 mx-auto rounded border-r-4 lg:border-r-[#ffc445]' />
+          src="/static/vikas.jpeg" alt="vikas ipar" className='w-[80%] md:w-[60%] lg:w-[35%] mb-5 mt-2 mx-auto rounded-lg lg:border-r-4 lg:border-r-[#ffc445]' />
         </div>
 
         <motion.h3 
@@ -60,12 +60,12 @@ function About() {
         initial={{y:80, opacity:0}}
         whileInView={{y:0, opacity:1}}
         transition={{duration:1.5, delay:0.3}}
-        src="/static/caretracker.jpeg" alt="chatbot" className='w-[80%] lg:w-[60%] mx-auto' />
+        src="/static/caretracker.jpeg" alt="chatbot" className='w-[80%] lg:w-[60%] mx-auto overflow-x-hidden' />
         <motion.p 
         initial={{y:80, opacity:0}}
         whileInView={{y:0, opacity:1}}
         transition={{duration:1.5, delay:0.3}}
-        className='text-base lg:text-xl py-5 text-justify w-[90%] lg:w-[80%] mx-auto text-[#404242]'>In my final year of engineering, I collaborated on the 'CareTracker' project, a child tracking system using HTML, CSS, Bootstrap, JavaScript, PHP, MySQL, XAMPP, and PHPMyAdmin. The web-based platform allowed parents to register and update their child's information securely. Utilizing NFC technology, the system enabled communication with a finder person's phone, aiding in locating missing children. This project not only demonstrated my technical proficiency but also contributed to child safety. The real-time location sharing and streamlined information access showcased the potential impact of technology on addressing real-world challenges, solidifying my commitment to leveraging technology for social good.</motion.p>
+        className='text-base lg:text-xl py-5 text-justify w-[90%] lg:w-[80%] mx-auto text-[#404242] overflow-x-hidden'>In my final year of engineering, I collaborated on the 'CareTracker' project, a child tracking system using HTML, CSS, Bootstrap, JavaScript, PHP, MySQL, XAMPP, and PHPMyAdmin. The web-based platform allowed parents to register and update their child's information securely. Utilizing NFC technology, the system enabled communication with a finder person's phone, aiding in locating missing children. This project not only demonstrated my technical proficiency but also contributed to child safety. The real-time location sharing and streamlined information access showcased the potential impact of technology on addressing real-world challenges, solidifying my commitment to leveraging technology for social good.</motion.p>
         <motion.h6 
         initial={{y:50, opacity:0}}
         whileInView={{y:0, opacity:1}}
@@ -168,9 +168,9 @@ function About() {
         whileInView={{y:0, opacity:1}}
         transition={{duration:1.5, delay:0.3}}
         className='text-base lg:text-xl text-[#404242] lg:leading-relaxed text-justify w-[90%] lg:w-[80%] mx-auto'>
-          <li className='flex items-center my-3 lg:my-auto'><MdDesignServices className='text-2xl mx-5'/>Received a certificate for participating in PICT's Impetus and Concepts’23 project competition, 2023.</li>
-          <li className='flex items-center my-3 lg:my-auto'><RiPresentationFill className='text-2xl mx-5'/>Awarded a certificate for involvement in Astrothon by Sinhgad Academy of Engineering, 2023.</li>
-          <li className='flex items-start'><IoDocument className='text-[2.6rem] mx-5'/>Received certificates for publishing two research papers on GIS Science Journal during my final year of engineering: 'CareTracer A Safety Band for Children' and 'Implementing Near-Field Communication System for Passive Child Tracking.</li>
+          <li className='flex items-center my-3 lg:my-auto'><MdDesignServices className='text-5xl mx-5'/>Received a certificate for participating in PICT's Impetus and Concepts’23 project competition, 2023.</li>
+          <li className='flex items-center my-3 lg:my-auto'><RiPresentationFill className='text-5xl mx-5'/>Awarded a certificate for involvement in Astrothon by Sinhgad Academy of Engineering, 2023.</li>
+          <li className='flex items-start'><IoDocument className='text-8xl mx-5'/>Received certificates for publishing two research papers on GIS Science Journal during my final year of engineering: 'CareTracer A Safety Band for Children' and 'Implementing Near-Field Communication System for Passive Child Tracking.</li>
         </motion.ul>
 
         <motion.h3 
@@ -185,7 +185,7 @@ function About() {
         transition={{duration:1.5, delay:0.3}}
         className='text-base lg:text-xl text-[#404242] text-justify lg:leading-relaxed w-[80%] mx-auto'>
           <li className='flex items-center my-3 lg:my-auto'><SiCoursera className='mx-5 text-2xl'/>Coursera - Advanced React: Meta Front-End Developer Specialization.</li>
-          <li className='flex items-center my-3 lg:my-auto'><FaFreeCodeCamp className='mx-5 text-2xl'/>freeCodeCamp - Responsive Web Design Course Certificate.</li>
+          <li className='flex items-center my-3 lg:my-auto'><FaFreeCodeCamp className='mx-5 text-4xl'/>freeCodeCamp - Responsive Web Design Course Certificate.</li>
           <li className='flex items-center my-3 lg:my-auto'><SiUdemy className='mx-5 text-2xl'/>Udemy - The Complete ReactJs Course.</li>
           <li className='flex items-center my-3 lg:my-auto'><FaGofore className='mx-5 text-2xl'/>Great Learning - UI/UX for Beginners Course.</li>
           <li className='flex items-center'><RiCoreosLine className='mx-5 text-2xl'/>Core2Web - The Complete C Programming Course</li>
@@ -207,7 +207,7 @@ function About() {
           initial={{opacity:0}}
           whileInView={{opacity:1}}
           transition={{duration:1.5, delay:0.3}}
-          className='text-lg lg:text-xl text-[#404242]'>Sinhgad College of Engineering, Pune (SPPU)</motion.h5>
+          className='text-base lg:text-xl text-[#404242]'>Sinhgad College of Engineering, Pune (SPPU)</motion.h5>
           <motion.h6 
           initial={{opacity:0}}
           whileInView={{opacity:1}}
