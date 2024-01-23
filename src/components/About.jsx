@@ -170,7 +170,7 @@ function About() {
         className='text-base lg:text-xl text-[#404242] lg:leading-relaxed text-justify w-[90%] lg:w-[80%] mx-auto'>
           <li className='flex items-center my-3 lg:my-auto'><MdDesignServices className='text-5xl mx-5'/>Received a certificate for participating in PICT's Impetus and Concepts’23 project competition, 2023.</li>
           <li className='flex items-center my-3 lg:my-auto'><RiPresentationFill className='text-5xl mx-5'/>Awarded a certificate for involvement in Astrothon by Sinhgad Academy of Engineering, 2023.</li>
-          <li className='flex items-start'><IoDocument className='text-8xl mx-5'/>Received certificates for publishing two research papers on GIS Science Journal during my final year of engineering: 'CareTracer A Safety Band for Children' and 'Implementing Near-Field Communication System for Passive Child Tracking.</li>
+          <li className='flex items-start'><IoDocument className='text-8xl mx-5'/>Received certificates for publishing two research papers on GIS Science Journal during my final year of engineering: 'CareTracer A Safety Band for Children' and 'Implementing Near-Field Communication System for Passive Child Tracking'.</li>
         </motion.ul>
 
         <motion.h3 
