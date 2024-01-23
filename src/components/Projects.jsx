@@ -11,7 +11,7 @@ const Projects = () => {
       title: "E-commerce Application",
       live: "https://ecommerce-app-vikasipar.vercel.app/",
       github: "https://github.com/vikasipar/ecommerce-app",
-      stack: "React.js, Redux Toolkit, Tailwind CSS, Firebase, FakeStoreAPI",
+      stack: ['React.js', 'Redux', 'Tailwind', 'Firebase', 'FakeStoreAPI'],
       desc: "I crafted dynamic React.js components styled with Tailwind CSS, enabling intuitive product listing and filtering via FakeStoreAPI. Utilizing Redux Toolkit, I efficiently managed state for seamless cart operations. Firebase integration ensures secure user authentication with email and password login.",
       img: "/static/ezmart-mockup.png",
     },
@@ -20,7 +20,7 @@ const Projects = () => {
       title: "YouTube Clone",
       live: "https://youtube-clone-vikasipar.vercel.app/",
       github: "https://github.com/vikasipar/youtube-clone",
-      stack: "React.js, Tailwind CSS, YouTube Data Integration",
+      stack: ['React.js', 'Tailwind', 'YouTube Data API'],
       desc: "I led frontend development and API integration using React.js, Tailwind CSS, and YouTube Data. Created a video player for seamless YouTube video streaming. Designed a user-friendly search bar. Ensured responsiveness for diverse screen sizes.",
       img: "/static/youtube-clone-mockup.jpeg",
     },
@@ -29,7 +29,7 @@ const Projects = () => {
       title: "Real-Time Chat Application",
       live: "https://about:blank",
       github: "https://github.com/vikasipar/chat-app",
-      stack: "Node.js, React.js, Tailwind CSS, Socket.io",
+      stack: ['Node.js', 'React.js', 'Tailwind', 'Socket.io'],
       desc: " Leveraging React.js, I delivered a dynamic frontend experience, incorporating the react-scroll-to-bottom library and Tailwind CSS for responsive user interfaces. Additionally, I implemented Socket.io to facilitate swift and real-time interactions. On the backend, I developed a robust system using Node.js and Express.js to handle seamless communication between users.",
       img: "/static/chatapp-mockup.png",
     },
@@ -39,7 +39,7 @@ const Projects = () => {
       title: "Superhero App",
       live: "https://reactjs-superhero-app.vercel.app/",
       github: "https://github.com/vikasipar/superhero-app",
-      stack: "React.js, Tailwind CSS, Superhero API",
+      stack: ['React.js', 'Tailwind', 'Superhero API'],
       desc: "I developed the Superhero App, a dynamic web application using React.js and Tailwind CSS. Leveraging the Superhero API, I implemented features that allow users to explore details about their favorite superheroes. The project showcases my skills in frontend development, user interface design, and API integration.",
       img: "/static/superhero-mockup.jpeg",
     },
@@ -69,8 +69,8 @@ const Projects = () => {
           transition={{duration:1, delay:0.3}} 
           className={`${project.id%2!==0 ? 'md:w-[45%] mx-auto' : 'md:w-[43%]'} w-[92%] mx-auto`} >
             <h1 className='font-bold text-2xl md:text-3xl text-[#1f4167]/80'>{project.title}</h1>
-            <h3 className='font-semibold text-base md:text-lg text-[#474646]'>Tech Stack: {project.stack}</h3>
-            <p className='text-justify text-[#2a3b4e]/80 text-lg'>{project.desc}</p>
+            <h3 className='text-base w-[80vw] md:w-auto mx-auto md:text-lg text-[#474646] flex flex-wrap my-2'>{project.stack.map((tech) => (<span className='px-2 bg-[#ffbb29]/50 border border-[#ffbb29] shadow mx-1 my-[1px] rounded-2xl'>{tech}</span>)) }</h3>
+            <p className='text-justify text-[#606570] text-lg'>{project.desc}</p>
             <div className='md:space-x-9 mt-2 md:mt-5 flex justify-around text-base md:text-lg'>
               <a href={`${project.github}`} target='_blank'>
               <motion.button 
@@ -83,7 +83,7 @@ const Projects = () => {
               initial={{scale:1}}
               whileHover={{scale:1.1}}
               transition={{duration:0.7, type:"spring"}}
-              className='px-5 py-1 rounded bg-[#db9936] text-white flex items-center'>Live Demo<TbWorld className='ml-2 text-lg' /></motion.button></a>
+              className='px-5 py-1 rounded bg-[#ffb412] text-white flex items-center'>Live Demo<TbWorld className='ml-2 text-lg' /></motion.button></a>
             </div>
           </motion.div>
        </div>

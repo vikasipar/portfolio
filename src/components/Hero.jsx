@@ -14,7 +14,7 @@ const Hero = () => {
         initial={{opacity:0, y:100}}
         animate={{opacity:1, y:0}}
         transition={{duration:2, type:"spring"}}
-        src="/static/dev.jpeg" alt="vikasip" className='block lg:hidden w-[50%] md:w-[30%] mx-auto mt-16' />
+        src="/static/vip.jpeg" alt="vikasip" className='block lg:hidden w-[60%] md:w-[30%] mx-auto mt-10 rounded-[6rem]' />
 
         <motion.div 
         initial={{x: -760}}
@@ -23,7 +23,7 @@ const Hero = () => {
         className='lg:w-[43%] lg:ml-48 items-center space-y-8'>
                 
                 <h1 className='text-4xl xl:text-7xl mt-9 text-center lg:text-left font-bold text-[#1f4167]/90'>Hello, I'm Vikas.</h1>
-                <p className='w-[86%] mx-auto lg:mx-0 text-lg md:text-2xl text-justify text-[#8d9094]'>I'm a <span className='text-[#fca319] font-bold text-2xl md:text-3xl'>front-end developer</span> with experience in many different languages, and technologies. I'm always looking for new challenges to tackle.</p>
+                <p className='w-[86%] mx-auto lg:mx-0 text-lg md:text-2xl text-justify text-[#848a98]'>I'm a <span className='text-[#fca319] font-bold text-2xl md:text-3xl'>front-end developer</span> with experience in many different languages, and technologies. I'm always looking for new challenges to tackle.</p>
 
                 <div className='space-x-10 flex flex-wrap items-center text-[#1f4167] w-fit mx-auto lg:mx-0'>
                 <motion.a 
@@ -48,7 +48,7 @@ const Hero = () => {
         transition={{delay:0.2, ease:'easeIn', duration:1.9, type:"spring"}}
         className='hidden lg:block w-[30%]'
         >
-          <img src="/static/dev.jpeg" alt="vikasip" className={`w-[99%] left-0`} />
+          <img src="/static/vip.jpeg" alt="vikasip" className={`w-[99%] left-0 rounded-full`} />
         </motion.div>
 
       </div>
