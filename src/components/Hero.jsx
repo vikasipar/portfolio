@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedin, FaTwitterSquare } from "react-icons/fa";
 import { FaSquareGithub } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
@@ -29,15 +29,19 @@ const Hero = () => {
                 <motion.a 
                   whileHover={{scale:1.2}}
                   transition={{duration:0.9}}
-                  href='https://github.com/vikasipar' title='https://github.com/vikasipar' target='_blank' className='text-2xl lg:text-4xl'><FaSquareGithub/></motion.a>
+                  href='https://github.com/vikasipar' title='https://github.com/vikasipar' target='_blank' className='text-2xl lg:text-3xl'><FaSquareGithub/></motion.a>
                 <motion.a 
                   whileHover={{scale:1.2}}
                   transition={{duration:0.9}}
-                  href='https://in.linkedin.com/in/vikas-ipar-705b6922a' target='_blank' title='https://in.linkedin.com/in/vikas-ipar-705b6922a' className='text-2xl lg:text-4xl'><FaLinkedin/></motion.a>
+                  href='https://in.linkedin.com/in/vikas-ipar-705b6922a' target='_blank' title='https://in.linkedin.com/in/vikas-ipar-705b6922a' className='text-2xl lg:text-3xl'><FaLinkedin/></motion.a>
                 <motion.a 
                   whileHover={{scale:1.2}}
                   transition={{duration:0.9}}
-                  href='mailto:vikasipar.scoe.it@gmail.com' title='vikasipar.scoe.it@gmail.com' target='_blank' className='text-2xl lg:text-4xl'><MdEmail/></motion.a>
+                  href='https://x.com/vikas_ipar?t=xdfw_bSJLdFN8dykcCSWZw&s=08' target='_blank' title='https://x.com/vikas_ipar?t=xdfw_bSJLdFN8dykcCSWZw&s=08' className='text-2xl lg:text-3xl'><FaTwitterSquare/></motion.a>
+                <motion.a 
+                  whileHover={{scale:1.2}}
+                  transition={{duration:0.9}}
+                  href='mailto:vikasipar.scoe.it@gmail.com' title='vikasipar.scoe.it@gmail.com' target='_blank' className='text-[1.61rem] lg:text-[2.1rem]'><MdEmail/></motion.a>
             </div>
 
         </motion.div>

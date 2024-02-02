@@ -18,7 +18,7 @@ const Projects = () => {
     {
       id: 2,
       title: "YouTube Clone",
-      live: "https://youtube-clone-vikasipar.vercel.app/",
+      live: "https://betayoutube.vercel.app/",
       github: "https://github.com/vikasipar/youtube-clone",
       stack: ['React.js', 'Tailwind', 'YouTube Data API'],
       desc: "I led frontend development and API integration using React.js, Tailwind CSS, and YouTube Data. Created a video player for seamless YouTube video streaming. Designed a user-friendly search bar. Ensured responsiveness for diverse screen sizes.",
@@ -37,7 +37,7 @@ const Projects = () => {
     {
       id: 4,
       title: "Superhero App",
-      live: "https://reactjs-superhero-app.vercel.app/",
+      live: "https://mysuperheros.vercel.app/",
       github: "https://github.com/vikasipar/superhero-app",
       stack: ['React.js', 'Tailwind', 'Superhero API'],
       desc: "I developed the Superhero App, a dynamic web application using React.js and Tailwind CSS. Leveraging the Superhero API, I implemented features that allow users to explore details about their favorite superheroes. The project showcases my skills in frontend development, user interface design, and API integration.",
@@ -77,13 +77,13 @@ const Projects = () => {
               initial={{scale:1}}
               whileHover={{scale:1.1}}
               transition={{duration:0.7, type:"spring"}}
-              className='px-5 py-1 bg-[#0a1520]/90 text-white rounded flex items-center'>Code<FaGithub className='ml-2' /></motion.button></a>
+              className='px-5 py-1 bg-[#0a1520]/90 text-white rounded flex items-center'>Code Files<FaGithub className='ml-2' /></motion.button></a>
               <a href={`${project.live}`} target='_blank'>
               <motion.button 
               initial={{scale:1}}
               whileHover={{scale:1.1}}
               transition={{duration:0.7, type:"spring"}}
-              className='px-5 py-1 rounded bg-[#ffb412] text-white flex items-center'>Live Demo<TbWorld className='ml-2 text-lg' /></motion.button></a>
+              className='px-5 py-1 rounded bg-[#ffb412] text-white flex items-center'>Live Site<TbWorld className='ml-2 text-lg' /></motion.button></a>
             </div>
           </motion.div>
        </div>
