@@ -14,7 +14,7 @@ const Hero = () => {
         initial={{opacity:0, y:100}}
         animate={{opacity:1, y:0}}
         transition={{duration:2, type:"spring"}}
-        src="/static/vip.jpeg" alt="vikasip" className='block lg:hidden w-[60%] md:w-[30%] mx-auto mt-10 rounded-[6rem]' />
+        src="/static/vikas-ipar.jpeg" alt="vikas-ipar" title='vikas-ipar' className='block lg:hidden w-[60%] md:w-[30%] mx-auto mt-10 rounded-[6rem]' />
 
         <motion.div 
         initial={{x: -760}}
@@ -52,7 +52,7 @@ const Hero = () => {
         transition={{delay:0.2, ease:'easeIn', duration:1.9, type:"spring"}}
         className='hidden lg:block w-[30%]'
         >
-          <img src="/static/vip.jpeg" alt="vikasip" className={`w-[99%] left-0 rounded-full`} />
+          <img src="/static/vikas-ipar.jpeg" alt="vikas-ipar" title='vikas-ipar' className={`w-[99%] left-0 rounded-full`} />
         </motion.div>
 
       </div>

@@ -10,11 +10,27 @@ import { RiTeamFill, RiPresentationFill, RiCoreosLine} from "react-icons/ri";
 import { FaGofore } from "react-icons/fa6";
 import { GrMysql } from "react-icons/gr";
 import { motion } from 'framer-motion';
-
-
+import { Helmet } from 'react-helmet-async';
 
 function About() {
   return (
+    <>
+    <Helmet>
+        <title>About - Vikas Ipar | Frontend Developer</title>
+        <meta name="description" content="Learn more about Vikas Ipar, a frontend developer passionate about creating modern web experiences." />
+        <meta name="keywords" content="vikas ipar portfolio, projects, frontend developer, React developer, javascript developer, ui developer, web developer, software developer, full stack developer, mern stack developer, animated portfolio, best portfolio, framer motion website, animation, vikas ipar, portfolio, vikas ipar portfolio, modern website, web developer in pune, about me, who is vikas ipar, who is vikas" />
+        <meta name="author" content="Vikas Ipar" />
+        <meta property="og:title" content="About - Vikas Ipar Portfolio" />
+        <meta property="og:description" content="Welcome to my portfolio website showcasing my projects and skills." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.vikasipar.vercel.app" />
+        <meta property="og:image" content="https://www.vikasipar.vercel.app/static/vikas-ipar-portfolio.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="About - Vikas Ipar Portfolio" />
+        <meta name="twitter:description" content="Welcome to my portfolio website showcasing my projects and skills." />
+        <meta name="twitter:image" content="https://www.vikasipar.vercel.app/static/vikas-ipar-portfolio.png" />
+    </Helmet>
+
     <div className='w-[95%] mx-auto lg:w-[80%] lg:ml-[15%] overflow-x-hidden'>
         <motion.h1 
         initial={{x:-250, opacity:0}}
@@ -37,7 +53,7 @@ function About() {
           whileInView={{x:0, opacity:1}}
           whileHover={{y:-20}}
           transition={{duration:1.5, delay:0.3}}
-          src="/static/vikas.jpeg" alt="vikas ipar" className='w-[80%] md:w-[60%] lg:w-[35%] mb-5 mt-2 mx-auto rounded-lg lg:border-r-4 lg:border-r-[#ffc445]' />
+          src="/static/about-vikas-ipar.jpeg" alt="about-vikas-ipar" title='vikas-ipar' className='w-[80%] md:w-[60%] lg:w-[35%] mb-5 mt-2 mx-auto rounded-lg lg:border-r-4 lg:border-r-[#ffc445]' />
         </div>
 
         <motion.h3 
@@ -60,7 +76,7 @@ function About() {
         initial={{y:80, opacity:0}}
         whileInView={{y:0, opacity:1}}
         transition={{duration:1.5, delay:0.3}}
-        src="/static/caretracker.jpeg" alt="chatbot" className='w-[80%] lg:w-[60%] mx-auto overflow-x-hidden' />
+        src="/static/caretracker.jpeg" alt="vikas-ipar-project-caretracker" title='caretracker-project' className='w-[80%] lg:w-[60%] mx-auto overflow-x-hidden' />
         <motion.p 
         initial={{y:80, opacity:0}}
         whileInView={{y:0, opacity:1}}
@@ -80,7 +96,7 @@ function About() {
         initial={{y:80, opacity:0}}
         whileInView={{y:0, opacity:1}}
         transition={{duration:1.5, delay:0.3}}
-        src="/static/chatbot.jpg" alt="chatbot" className='w-[80%] lg:w-[60%] mx-auto' />
+        src="/static/chatbot.jpg" alt="vikas-ipar-project-chatbot" title='chatbot-project' className='w-[80%] lg:w-[60%] mx-auto' />
         <motion.p 
         initial={{y:80, opacity:0}}
         whileInView={{y:0, opacity:1}}
@@ -216,6 +232,7 @@ function About() {
         </div>
         
     </div>
+  </>
   )
 }
 

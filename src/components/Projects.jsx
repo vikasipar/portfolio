@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaArrowCircleRight } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { TbWorld } from "react-icons/tb";
 
 const Projects = () => {
@@ -9,7 +9,7 @@ const Projects = () => {
     {
       id: 1,
       title: "E-commerce Application",
-      live: "https://ecommerce-app-vikasipar.vercel.app/",
+      live: "https://ezmartshop.vercel.app/",
       github: "https://github.com/vikasipar/ecommerce-app",
       stack: ['React.js', 'Redux', 'Tailwind', 'Firebase', 'FakeStoreAPI'],
       desc: "I crafted dynamic React.js components styled with Tailwind CSS, enabling intuitive product listing and filtering via FakeStoreAPI. Utilizing Redux Toolkit, I efficiently managed state for seamless cart operations. Firebase integration ensures secure user authentication with email and password login.",

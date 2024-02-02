@@ -4,6 +4,7 @@ import { FaLinkedin, FaTwitterSquare } from "react-icons/fa";
 import { FaSquareGithub } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import emailjs from '@emailjs/browser';
+import { Helmet } from 'react-helmet-async';
 
 function Contact() {
 
@@ -14,6 +15,23 @@ function Contact() {
     }
 
   return (
+    <>
+    <Helmet>
+        <title>Contact - Vikas Ipar | Frontend Developer</title>
+        <meta name="description" content="Get in touch with Vikas Ipar, a frontend developer passionate about creating modern web experiences." />
+        <meta name="keywords" content="vikas ipar portfolio, projects, frontend developer, React developer, javascript developer, ui developer, web developer, software developer, full stack developer, mern stack developer, animated portfolio, best portfolio, framer motion website, animation, vikas ipar, portfolio, vikas ipar portfolio, modern website, web developer in pune, contact me" />
+        <meta name="author" content="Vikas Ipar" />
+        <meta property="og:title" content="Contact - Vikas Ipar Portfolio" />
+        <meta property="og:description" content="Get in touch with Vikas Ipar, a frontend developer passionate about creating modern web experiences." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.vikasipar.vercel.app/contact" />
+        <meta property="og:image" content="https://www.vikasipar.vercel.app/static/vikas-ipar-portfolio.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Contact - Vikas Ipar Portfolio" />
+        <meta name="twitter:description" content="Get in touch with Vikas Ipar, a frontend developer passionate about creating modern web experiences." />
+        <meta name="twitter:image" content="https://www.vikasipar.vercel.app/static/vikas-ipar-portfolio.png" />
+    </Helmet>
+
     <div className='lg:flex flex-wrap items-center w-[90%] lg:w-[80%] lg:h-[90vh] lg:ml-[13%] overflow-hidden'>
         
         <motion.div 
@@ -59,6 +77,7 @@ function Contact() {
         </motion.form>
 
     </div>
+</>
   )
 }
 
