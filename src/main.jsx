@@ -5,6 +5,7 @@ import { NavProvider } from './components/NavContext.jsx';
 import { HelmetProvider } from 'react-helmet-async';
 import App from './App.jsx';
 import './index.css';
+import {Analytics} from '@vercel/analytics/react';
 import Footer from './components/Footer.jsx';
 import About from './components/About.jsx';
 import Contact from './components/Contact.jsx';
@@ -24,6 +25,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path='/*' element={<Page404/>} />
         </Routes>
         <Footer />
+        <Analytics/>
       </BrowserRouter>
     </NavProvider> 
     </HelmetProvider>
