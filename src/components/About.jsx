@@ -110,35 +110,10 @@ function About() {
         viewport={{once:true}}
         className='text-3xl lg:text-4xl text-[#1f4167] my-5'>What Are My Skills?</motion.h3>
         <div className='flex flex-col-reverse lg:flex-row'>
-          <div className='w-[90%] lg:w-[30%] mx-auto '>
-            <motion.span 
-            initial={{y:50, opacity:0}}
-            whileInView={{y:0, opacity:1}}
-            transition={{duration:1.5, delay:0.3}}
-            className='text-xl lg:text-3xl text-[#fca319]'>Soft Skills</motion.span>
-            <motion.ul 
-            initial={{y:100, opacity:0}}
-            whileInView={{y:0, opacity:1}}
-            transition={{duration:1.5, delay:0.3}}
-            className='text-lg lg:text-xl ml-9 text-[#1f4167] leading-relaxed'>
-              <li className='flex items-center'><MdOutlineLocationSearching className='mx-5'/>Attention to Details</li>
-              <li className='flex items-center'><IoMdDoneAll className='mx-5'/>Problem Solving</li>
-              <li className='flex items-center'><GiStumpRegrowth className='mx-5'/>Adaptibility</li>
-              <li className='flex items-center'><IoExpand className='mx-5'/>Flexibility</li>
-              <li className='flex items-center'><MdAutoFixHigh className='mx-5'/>Creativity</li>
-              <li className='flex items-center'><RiTeamFill className='mx-5'/>Teamwork</li>
-              <li className='flex items-center'><GiEagleHead className='mx-5'/>Self Motivated</li>
-              <li className='flex items-center'><GiBookshelf className='mx-5'/>Continuous Learning</li>
-            </motion.ul>
-          </div>
           
-          <div className='w-[90%] lg:w-[50%] mx-auto text-lg lg:text-xl'>
-            <motion.span 
-            initial={{y:50, opacity:0}}
-            whileInView={{y:0, opacity:1}}
-            transition={{duration:1.5, delay:0.3}}
-            className='text-xl lg:text-3xl text-[#fca319]'>Hard Skills</motion.span>
-            <div className='flex justify-around text-[#1f4167]'>
+          <div className='w-[90%] lg:w-[70%] mx-auto text-lg lg:text-xl'>
+            
+            <div className='flex justify-around text-[#404242]'>
                 <motion.ul 
                 initial={{y:100, opacity:0}}
                 whileInView={{y:0, opacity:1}}
@@ -184,9 +159,9 @@ function About() {
         whileInView={{y:0, opacity:1}}
         transition={{duration:1.5, delay:0.3}}
         className='text-base lg:text-xl text-[#404242] lg:leading-relaxed text-justify w-[90%] lg:w-[80%] mx-auto'>
-          <li className='flex items-center my-3 lg:my-auto'><MdDesignServices className='text-5xl mx-5'/>Received a certificate for participating in PICT's Impetus and Concepts’23 project competition, 2023.</li>
-          <li className='flex items-center my-3 lg:my-auto'><RiPresentationFill className='text-5xl mx-5'/>Awarded a certificate for involvement in Astrothon by Sinhgad Academy of Engineering, 2023.</li>
-          <li className='flex items-start'><IoDocument className='text-8xl mx-5'/>Received certificates for publishing two research papers on GIS Science Journal during my final year of engineering: 'CareTracer A Safety Band for Children' and 'Implementing Near-Field Communication System for Passive Child Tracking'.</li>
+          <li className='flex items-center my-3 lg:my-auto'><MdDesignServices className='text-4xl mx-5'/>Received a certificate for participating in PICT's Impetus and Concepts’23 project competition, 2023.</li>
+          <li className='flex items-center my-3 lg:my-auto'><RiPresentationFill className='text-4xl mx-5'/>Awarded a certificate for involvement in Astrothon by Sinhgad Academy of Engineering, 2023.</li>
+          <li className='flex items-start'><IoDocument className='text-7xl mx-5'/>Received certificates for publishing two research papers on GIS Science Journal during my final year of engineering: 'CareTracer A Safety Band for Children' and 'Implementing Near-Field Communication System for Passive Child Tracking'.</li>
         </motion.ul>
 
         <motion.h3 

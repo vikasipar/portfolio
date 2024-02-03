@@ -12,7 +12,7 @@ const Projects = () => {
       live: "https://ezmartshop.vercel.app/",
       github: "https://github.com/vikasipar/ecommerce-app",
       stack: ['React.js', 'Redux', 'Tailwind', 'Firebase', 'FakeStoreAPI'],
-      desc: "I crafted dynamic React.js components styled with Tailwind CSS, enabling intuitive product listing and filtering via FakeStoreAPI. Utilizing Redux Toolkit, I efficiently managed state for seamless cart operations. Firebase integration ensures secure user authentication with email and password login.",
+      desc: "It imulates a real-world shopping experience with dynamic components for intuitive product listing and filtering 🛒. Ensured seamless cart operations, secure user authentication, and added toast notifications for improved user experience.",
       img: "/static/ezmart-mockup.png",
     },
     {
@@ -21,7 +21,7 @@ const Projects = () => {
       live: "https://betayoutube.vercel.app/",
       github: "https://github.com/vikasipar/youtube-clone",
       stack: ['React.js', 'Tailwind', 'YouTube Data API'],
-      desc: "I led frontend development and API integration using React.js, Tailwind CSS, and YouTube Data. Created a video player for seamless YouTube video streaming. Designed a user-friendly search bar. Ensured responsiveness for diverse screen sizes.",
+      desc: "I led frontend development and API integration, ensuring smooth YouTube video streaming 🎬, intuitive content discovery with a user-friendly search bar, and consistent experience across various screen sizes.",
       img: "/static/youtube-clone-mockup.jpeg",
     },
     {
@@ -30,7 +30,7 @@ const Projects = () => {
       live: "https://about:blank",
       github: "https://github.com/vikasipar/chat-app",
       stack: ['Node.js', 'React.js', 'Tailwind', 'Socket.io'],
-      desc: " Leveraging React.js, I delivered a dynamic frontend experience, incorporating the react-scroll-to-bottom library and Tailwind CSS for responsive user interfaces. Additionally, I implemented Socket.io to facilitate swift and real-time interactions. On the backend, I developed a robust system using Node.js and Express.js to handle seamless communication between users.",
+      desc: "Crafted a dynamic frontend with responsive interfaces using React.js. Facilitated swift and real-time interactions 💬with Socket.io. Developed a robust backend system to ensure seamless communication between users.",
       img: "/static/chatapp-mockup.png",
     },
     
@@ -40,7 +40,7 @@ const Projects = () => {
       live: "https://mysuperheros.vercel.app/",
       github: "https://github.com/vikasipar/superhero-app",
       stack: ['React.js', 'Tailwind', 'Superhero API'],
-      desc: "I developed the Superhero App, a dynamic web application using React.js and Tailwind CSS. Leveraging the Superhero API, I implemented features that allow users to explore details about their favorite superheroes. The project showcases my skills in frontend development, user interface design, and API integration.",
+      desc: "Dive into the world of superheroes🦸! Developed a dynamic web application that showcases my skills in frontend development and API integration. Leveraging React and Tailwind CSS, along with the Superhero API, users can explore details about their favorite superheroes with ease.",
       img: "/static/superhero-mockup.jpeg",
     },
   ];
