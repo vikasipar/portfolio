@@ -16,11 +16,11 @@ const Home = () => {
         <meta property="og:description" content="Welcome to my portfolio website showcasing my projects and skills." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.vikasipar.vercel.app" />
-        <meta property="og:image" content="https://www.vikasipar.vercel.app/static/vikas-ipar-portfolio.png" />
+        <meta property="og:image" content="https://www.vikasipar.vercel.app/static/vikas-ipar.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Vikas Ipar Portfolio" />
         <meta name="twitter:description" content="Welcome to my portfolio website showcasing my projects and skills." />
-        <meta name="twitter:image" content="https://www.vikasipar.vercel.app/static/vikas-ipar-portfolio.png" />
+        <meta name="twitter:image" content="https://www.vikasipar.vercel.app/static/vikas-ipar.png" />
       </Helmet>
           <Hero />
           <Projects />

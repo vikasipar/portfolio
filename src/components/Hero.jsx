@@ -20,7 +20,7 @@ const Hero = () => {
         <motion.div 
         initial={{x: -760}}
         animate={{x: 0}}
-        transition={{delay:1, ease:'easeIn', duration:1.8, type:"spring"}}
+        transition={{delay:0.9, ease:'easeIn', duration:2, type:"spring"}}
         className='lg:w-[43%] lg:ml-48 items-center space-y-8'>
                 
                 <h1 className='text-4xl xl:text-7xl mt-9 text-center lg:text-left font-bold text-[#1f4167]/90'>Hello, I'm Vikas.</h1>
@@ -50,7 +50,7 @@ const Hero = () => {
         <motion.div 
         initial={{x:-310, scale:0.4}}
         animate={{x:0, scale:1}}
-        transition={{duration:2.5, ease:'easeIn', duration:1.9, type:"spring"}}
+        transition={{duration:2.5, ease:'easeIn', type:"spring"}}
         className='hidden lg:block w-[30%]'
         >
           <img src="/static/vikas-ipar.jpeg" alt="vikas-ipar" title='vikas-ipar' className={`w-[99%] left-0 rounded-full`} />

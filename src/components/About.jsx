@@ -24,11 +24,11 @@ function About() {
         <meta property="og:description" content="Welcome to my portfolio website showcasing my projects and skills." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.vikasipar.vercel.app" />
-        <meta property="og:image" content="https://www.vikasipar.vercel.app/static/vikas-ipar-portfolio.png" />
+        <meta property="og:image" content="https://www.vikasipar.vercel.app/static/vikas-ipar.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="About - Vikas Ipar Portfolio" />
         <meta name="twitter:description" content="Welcome to my portfolio website showcasing my projects and skills." />
-        <meta name="twitter:image" content="https://www.vikasipar.vercel.app/static/vikas-ipar-portfolio.png" />
+        <meta name="twitter:image" content="https://www.vikasipar.vercel.app/static/vikas-ipar.png" />
     </Helmet>
 
     <div className='w-[95%] mx-auto lg:w-[80%] lg:ml-[15%] overflow-x-hidden'>
@@ -37,7 +37,7 @@ function About() {
         whileInView={{x:0, opacity:1}}
         transition={{duration:1, delay:0.2}}
         viewport={{once:true}}
-        className='text-3xl lg:text-4xl text-[#1f4167] my-5'>Who Am I?</motion.h1>
+        className='text-3xl lg:text-4xl text-[#1f4167] my-5 ml-4 md:ml-auto'>Who Am I?</motion.h1>
         <div className='flex flex-col-reverse lg:flex-row w-[90%] mx-auto'>
           <motion.p 
           initial={{x:150, opacity:0}}
@@ -61,7 +61,7 @@ function About() {
         whileInView={{x:0, opacity:1}}
         transition={{duration:1, delay:0.2}}
         viewport={{once:true}}
-        className='text-3xl lg:text-4xl text-[#1f4167] my-5'>What have I done?</motion.h3>
+        className='text-3xl lg:text-4xl text-[#1f4167] my-5 ml-4 md:ml-auto'>What have I done?</motion.h3>
         <div className='flex flex-wrap items-start'>
           <div className='w-[90%] lg:w-[45%] mx-auto'>
         <motion.h6 
@@ -114,7 +114,7 @@ function About() {
         whileInView={{x:0, opacity:1}}
         transition={{duration:1, delay:0.2}}
         viewport={{once:true}}
-        className='text-3xl lg:text-4xl text-[#1f4167] my-5'>What Are My Skills?</motion.h3>
+        className='text-3xl lg:text-4xl text-[#1f4167] my-5 ml-4 md:ml-auto'>What Are My Skills?</motion.h3>
         <div className='flex flex-col-reverse lg:flex-row'>
           
           <div className='w-[90%] lg:w-[70%] mx-auto text-lg lg:text-xl'>
@@ -165,7 +165,7 @@ function About() {
         whileInView={{x:0, opacity:1}}
         transition={{duration:1, delay:0.2}}
         viewport={{once:true}}
-        className='text-3xl lg:text-4xl text-[#1f4167] my-5'>Achievements</motion.h3>
+        className='text-3xl lg:text-4xl text-[#1f4167] my-5 ml-4 md:ml-auto'>Achievements</motion.h3>
         <motion.ul 
         initial={{y:100, opacity:0}}
         whileInView={{y:0, opacity:1}}
@@ -181,7 +181,7 @@ function About() {
         whileInView={{x:0, opacity:1}}
         transition={{duration:1, delay:0.2}}
         viewport={{once:true}}
-        className='text-3xl lg:text-4xl text-[#1f4167] my-5'>Certifications</motion.h3>
+        className='text-3xl lg:text-4xl text-[#1f4167] my-5 ml-4 md:ml-auto'>Certifications</motion.h3>
         <motion.ul 
         initial={{y:100, opacity:0}}
         whileInView={{y:0, opacity:1}}
@@ -199,7 +199,7 @@ function About() {
         whileInView={{x:0, opacity:1}}
         transition={{duration:1, delay:0.2}}
         viewport={{once:true}}
-        className='text-3xl lg:text-4xl text-[#1f4167] my-5'>Education</motion.h3>
+        className='text-3xl lg:text-4xl text-[#1f4167] my-5 ml-4 md:ml-auto'>Education</motion.h3>
         <div className='w-[80%] mx-auto'>
           <motion.h4 
           initial={{y:50, opacity:0}}

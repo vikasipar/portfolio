@@ -51,7 +51,7 @@ const Projects = () => {
         initial={{y:100, opacity:0}}
         whileInView={{y:0, opacity:1}}
         transition={{duration:1}}
-        className='w-full pl-2 lg:pl-32 text-4xl mt-9 lg:mt-20 xl:mt-9 md:mt-0 md:text-5xl xl:text-6xl text-[#1f4167]'>Projects</motion.h1>
+        className='w-full pl-2 lg:pl-32 text-4xl mt-9 lg:mt-20 xl:mt-9 md:mt-0 md:text-5xl xl:text-6xl text-[#1f4167] ml-4 md:ml-auto'>Projects</motion.h1>
       {
       projectdata.map(project => (
         <div key={`${project.id}`} className='w-[86vw] md:flex items-center mx-auto text-base lg:ml-24 mb-16 md:mb-4 lg:mb-10 xl:mb-5 overflow-hidden'>
@@ -76,14 +76,14 @@ const Projects = () => {
               <motion.button 
               initial={{scale:1}}
               whileHover={{scale:1.1}}
-              transition={{duration:0.7, type:"spring"}}
+              transition={{duration:1.4, type:"spring"}}
               className='px-5 py-1 bg-[#0a1520]/90 text-white rounded flex items-center'>Code Files<FaGithub className='ml-2' /></motion.button></a>
               <a href={`${project.live}`} target='_blank'>
               <motion.button 
               initial={{scale:1}}
               whileHover={{scale:1.1}}
-              transition={{duration:0.7, type:"spring"}}
-              className='px-5 py-1 rounded bg-[#ffb412] text-white flex items-center'>Live Site<TbWorld className='ml-2 text-lg' /></motion.button></a>
+              transition={{duration:1.4, type:"spring"}}
+              className='px-5 py-1 rounded bg-[#eca60d] text-white flex items-center'>Live Site<TbWorld className='ml-2 text-lg' /></motion.button></a>
             </div>
           </motion.div>
        </div>
