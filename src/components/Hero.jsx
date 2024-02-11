@@ -11,15 +11,16 @@ const Hero = () => {
       <div className='flex flex-wrap w-full xl:h-screen items-center overflow-hidden relative'>
 
         <motion.img
-        initial={{opacity:0, y:100}}
-        animate={{opacity:1, y:0}}
+        initial={{y:120, scale:0.5}}
+        animate={{y:0, scale:1}}
+        whileInView={{once:true}}
         transition={{duration:2, type:"spring"}}
         src="/static/vikas-ipar.jpeg" alt="vikas-ipar" title='vikas-ipar' className='block lg:hidden w-[60%] md:w-[30%] mx-auto mt-10 rounded-[6rem]' />
 
         <motion.div 
         initial={{x: -760}}
         animate={{x: 0}}
-        transition={{delay:1.3, ease:'easeIn', duration:1.6, type:"spring"}}
+        transition={{delay:1, ease:'easeIn', duration:1.8, type:"spring"}}
         className='lg:w-[43%] lg:ml-48 items-center space-y-8'>
                 
                 <h1 className='text-4xl xl:text-7xl mt-9 text-center lg:text-left font-bold text-[#1f4167]/90'>Hello, I'm Vikas.</h1>
@@ -47,9 +48,9 @@ const Hero = () => {
         </motion.div>
 
         <motion.div 
-        initial={{x:-1550, opacity:0}}
-        animate={{x:0, opacity:1}}
-        transition={{delay:0.2, ease:'easeIn', duration:1.9, type:"spring"}}
+        initial={{x:-310, scale:0.4}}
+        animate={{x:0, scale:1}}
+        transition={{duration:2.5, ease:'easeIn', duration:1.9, type:"spring"}}
         className='hidden lg:block w-[30%]'
         >
           <img src="/static/vikas-ipar.jpeg" alt="vikas-ipar" title='vikas-ipar' className={`w-[99%] left-0 rounded-full`} />

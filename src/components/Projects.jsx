@@ -71,7 +71,7 @@ const Projects = () => {
             <h1 className='font-bold text-2xl md:text-3xl text-[#1f4167]/80'>{project.title}</h1>
             <h3 className='text-base w-[82vw] md:w-auto mx-auto md:text-lg text-[#474646] flex flex-wrap justify-center my-2'>{project.stack.map((tech) => (<span className='px-2 bg-[#ffbb29]/50 border border-[#ffbb29] shadow mx-1 my-[2px] rounded-2xl'>{tech}</span>)) }</h3>
             <p className='text-justify text-[#606570] text-lg'>{project.desc}</p>
-            <div className='md:space-x-9 mt-2 md:mt-5 flex justify-around text-base md:text-lg'>
+            <div className='md:space-x-9 mt-2 md:mt-5 flex flex-wrap justify-around text-base md:text-lg'>
               <a href={`${project.github}`} target='_blank'>
               <motion.button 
               initial={{scale:1}}

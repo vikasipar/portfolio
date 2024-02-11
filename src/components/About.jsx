@@ -62,46 +62,52 @@ function About() {
         transition={{duration:1, delay:0.2}}
         viewport={{once:true}}
         className='text-3xl lg:text-4xl text-[#1f4167] my-5'>What have I done?</motion.h3>
+        <div className='flex flex-wrap items-start'>
+          <div className='w-[90%] lg:w-[45%] mx-auto'>
         <motion.h6 
         initial={{y:50, opacity:0}}
         whileInView={{y:0, opacity:1}}
         transition={{duration:1.5, delay:0.3}}
-        className='text-sm lg:text-xl  w-[90%] lg:w-[80%] mx-auto text-[#fca319]/90 uppercase'>B.E. Final Year Project</motion.h6>
+        className='text-sm lg:text-lg w-[90%] lg:w-full mx-auto text-[#fca319]/90 uppercase'>B.E. Final Year Project</motion.h6>
         <motion.h5 
         initial={{opacity:0}}
         whileInView={{opacity:1}}
         transition={{duration:1.5, delay:0.3}}
-        className='text-xl lg:text-3xl  w-[90%] lg:w-[80%] mx-auto text-[#1f4167]/90 mb-5'>CareTracker - A Passive Child Tracking System</motion.h5>
+        className='text-xl lg:text-2xl  w-[90%] lg:w-full mx-auto text-[#1f4167]/90 mb-5'>CareTracker - A Passive Child Tracking System</motion.h5>
         <motion.img 
         initial={{y:80, opacity:0}}
         whileInView={{y:0, opacity:1}}
         transition={{duration:1.5, delay:0.3}}
-        src="/static/caretracker.jpeg" alt="vikas-ipar-project-caretracker" title='caretracker-project' className='w-[80%] lg:w-[60%] mx-auto overflow-x-hidden' />
+        src="/static/caretracker.jpeg" alt="vikas-ipar-project-caretracker" title='caretracker-project' className='w-[80%] lg:w-[80%] mx-auto overflow-x-hidden' />
         <motion.p 
         initial={{y:80, opacity:0}}
         whileInView={{y:0, opacity:1}}
         transition={{duration:1.5, delay:0.3}}
-        className='text-base lg:text-xl py-5 text-justify w-[90%] lg:w-[80%] mx-auto text-[#404242] overflow-x-hidden'>In my final year of engineering, I collaborated on the 'CareTracker' project, a child tracking system using HTML, CSS, Bootstrap, JavaScript, PHP, MySQL, XAMPP, and PHPMyAdmin. The web-based platform allowed parents to register and update their child's information securely. Utilizing NFC technology, the system enabled communication with a finder person's phone, aiding in locating missing children. This project not only demonstrated my technical proficiency but also contributed to child safety. The real-time location sharing and streamlined information access showcased the potential impact of technology on addressing real-world challenges, solidifying my commitment to leveraging technology for social good.</motion.p>
+        className='text-base lg:text-lg py-5 text-justify w-[90%] lg:w-full mx-auto text-[#404242] overflow-x-hidden'>In my final year of engineering, I collaborated on the 'CareTracker' project, a child tracking system using HTML, CSS, Bootstrap, JavaScript, PHP, MySQL, XAMPP, and PHPMyAdmin. The web-based platform allowed parents to register and update their child's information securely. Utilizing NFC technology, the system enabled communication with a finder person's phone, aiding in locating missing children. This project not only demonstrated my technical proficiency but also contributed to child safety. The real-time location sharing and streamlined information access showcased the potential impact of technology on addressing real-world challenges, solidifying my commitment to leveraging technology for social good.</motion.p>
+        </div>
+        <div className='w-[90%] lg:w-[45%] mx-auto'>
         <motion.h6 
         initial={{y:50, opacity:0}}
         whileInView={{y:0, opacity:1}}
         transition={{duration:1.5, delay:0.3}}
-        className='text-sm lg:text-xl w-[90%] lg:w-[80%] mx-auto text-[#fca319]/90 uppercase'>Internship</motion.h6>
+        className='text-sm lg:text-lg w-[90%] lg:w-full mx-auto text-[#fca319]/90 uppercase'>Internship</motion.h6>
         <motion.h5 
         initial={{opacity:0}}
         whileInView={{opacity:1}}
         transition={{duration:1.5, delay:0.3}}
-        className='text-xl lg:text-3xl w-[90%] lg:w-[80%] mx-auto text-[#1f4167]/90 mb-5'>Covid-19 QnA Bot</motion.h5>
+        className='text-xl lg:text-2xl w-[90%] lg:w-full mx-auto text-[#1f4167]/90 mb-5'>Covid-19 QnA Bot</motion.h5>
         <motion.img 
         initial={{y:80, opacity:0}}
         whileInView={{y:0, opacity:1}}
         transition={{duration:1.5, delay:0.3}}
-        src="/static/chatbot.jpg" alt="vikas-ipar-project-chatbot" title='chatbot-project' className='w-[80%] lg:w-[60%] mx-auto' />
+        src="/static/chatbot.jpg" alt="vikas-ipar-project-chatbot" title='chatbot-project' className='w-[80%] lg:w-[80%] mx-auto' />
         <motion.p 
         initial={{y:80, opacity:0}}
         whileInView={{y:0, opacity:1}}
         transition={{duration:1.5, delay:0.3}}
-        className='text-base lg:text-xl py-5 text-justify w-[90%] lg:w-[80%] mx-auto text-[#404242]'>As part of my academic journey in the third year of engineering, I engaged in a virtual internship with the <span className='font-bold'> Microsoft Future Ready Talent Program</span>. During this experience, I was tasked with conceptualizing and building a solution for a real-world problem using Azure services. In response to the global pandemic of Covid-19, I developed a chatbot that provides users with answers to frequently asked questions about the virus. Leveraging Azure Bot Service, QnA Maker, HTML, and CSS, I created a simple, minimal, and aesthetically pleasing user interface. This opportunity not only refined my technical skills but also allowed me to apply technology to address real-world challenges.</motion.p>
+        className='text-base lg:text-lg py-5 text-justify w-[90%] lg:w-full mx-auto text-[#404242]'>As part of my academic journey in the third year of engineering, I engaged in a virtual internship with the <span className='font-bold'> Microsoft Future Ready Talent Program</span>. During this experience, I was tasked with conceptualizing and building a solution for a real-world problem using Azure services. In response to the global pandemic of Covid-19, I developed a chatbot that provides users with answers to frequently asked questions about the virus. Leveraging Azure Bot Service, QnA Maker, HTML, and CSS, I created a simple, minimal, and aesthetically pleasing user interface. This opportunity not only refined my technical skills but also allowed me to apply technology to address real-world challenges.</motion.p>
+        </div>
+        </div>
 
         <motion.h3 
         initial={{x:-250, opacity:0}}
@@ -113,7 +119,7 @@ function About() {
           
           <div className='w-[90%] lg:w-[70%] mx-auto text-lg lg:text-xl'>
             
-            <div className='flex justify-around text-[#404242]'>
+            <div className='flex flex-wrap justify-around text-[#404242]'>
                 <motion.ul 
                 initial={{y:100, opacity:0}}
                 whileInView={{y:0, opacity:1}}
@@ -124,23 +130,29 @@ function About() {
                 <li className='flex items-center'><SiTailwindcss className='mx-5'/>Tailwind CSS</li>
                 <li className='flex items-center'><IoLogoJavascript className='mx-5'/>JavaScript</li>
                 <li className='flex items-center'><FaReact className='mx-5'/>React</li>
-                <li className='flex items-center'><SiRedux className='mx-5'/>Redux</li>
+              </motion.ul>
+              <motion.ul 
+                initial={{y:100, opacity:0}}
+                whileInView={{y:0, opacity:1}}
+                transition={{duration:1.5, delay:0.3}}
+                className='leading-relaxed'>
+                <li className='flex items-center'><SiRedux className='mx-5'/>Redux/Recoil</li>
                 <li className='flex items-center'><FaNodeJs className='mx-5'/>Node.js</li>
                 <li className='flex items-center'><SiExpress className='mx-5'/>Express.js</li>
+                <li className='flex items-center'><FaPhp className='mx-5'/>PHP</li>
+                <li className='flex items-center'><SiC className='mx-5'/>C Language</li>
               </motion.ul>
               <motion.ul 
               initial={{y:100, opacity:0}}
               whileInView={{y:0, opacity:1}}
               transition={{duration:1.5, delay:0.3}}
               className='leading-relaxed'>
-                <li className='flex items-center'><FaPhp className='mx-5'/>PHP</li>
-                <li className='flex items-center'><SiC className='mx-5'/>C Language</li>
+                
                 <li className='flex items-center'><SiCplusplus className='mx-5'/>C++</li>
                 <li className='flex items-center'><GrMysql className='mx-5'/>MySQL</li>
                 <li className='flex items-center'><IoLogoFirebase className='mx-5'/>Firebase</li>
                 <li className='flex items-center'><FaGitAlt className='mx-5'/>Git/GitHub</li>
                 <li className='flex items-center'><TbBrandFramerMotion className='mx-5'/>Framer Motion</li>
-                <li className='flex items-center'><MdOutlineFullscreen className='mx-5'/>Responsive Design</li>
               </motion.ul>
             </div>
             

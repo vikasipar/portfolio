@@ -17,7 +17,7 @@ const Navbar = () => {
         key="sidebar"
         initial={{x:-300}}
         animate={{x:0}}
-        transition={{duration:0.9, ease:"easeIn", delay:2, type:"spring", stiffness:100}}
+        transition={{duration:0.9, ease:"easeIn", delay:2, type:"spring", stiffness:80}}
         className='hidden lg:flex bg-white shadow shadow-[#11181fbb] w-24 h-screen top-0 z-30 fixed flex-col py-7 text-center items-center' >
           <span className='text-xl bg-[#fca319]/90 text-white rounded-full p-3 mx-auto'>{ navvisible ? <AiOutlineClose onClick={() => navState.setIsNavVisible(!navState.isNavVisible)} className='cursor-pointer' title='Close'/> : <RiMenuFill onClick={() => navState.setIsNavVisible(!navState.isNavVisible)} className='cursor-pointer' title='Menu'/>}</span>
           <span className='-rotate-90 text-2xl w-max font-semibold text-[#8d9094]/70 my-auto'><Link to="/">Vikas Ipar</Link></span>
@@ -37,24 +37,34 @@ const Navbar = () => {
             transition={{duration:0.8, ease:"easeInOut"}} 
             className='fixed w-full md:w-[50vw] md:ml-[5.5rem] h-full bg-white/90 text-[#1f4167] z-20 overflow-hidden top-0' >
                 <motion.ul
-                    className='space-y-14 text-4xl md:text-5xl my-28 text-center md:text-left md:ml-48'>
+                    className='space-y-10 md:space-y-12 text-4xl md:text-5xl my-28 text-center md:text-left md:ml-48'>
                         <motion.li
                             initial={{opacity:0, x:-100}}
                             whileInView={{opacity:1, x:0}}
                             transition={{duration:0.9,delay:0.4, type:"spring", stiffness:130}}
                             className='cursor-pointer'>
                             <NavLink to="/" 
-                                onClick={() => navState.setIsNavVisible(!navState.isNavVisible)}
+                                onClick={() => {navState.setIsNavVisible(!navState.isNavVisible); window.scrollTo({top:0, behavior:"smooth"})}}
                                 style={({ isActive }) => ({
                                 color: isActive && "#fca319"})}>Home</NavLink>
                         </motion.li>
                         <motion.li
                             initial={{opacity:0, x:-100}}
                             whileInView={{opacity:1, x:0}}
+                            transition={{duration:0.9,delay:0.4, type:"spring", stiffness:130}}
+                            className='cursor-pointer'>
+                            <NavLink to="/blog" 
+                                onClick={() => {navState.setIsNavVisible(!navState.isNavVisible); window.scrollTo({top:0, behavior:"smooth"})}}
+                                style={({ isActive }) => ({
+                                color: isActive && "#fca319"})}>Blog</NavLink>
+                        </motion.li>
+                        <motion.li
+                            initial={{opacity:0, x:-100}}
+                            whileInView={{opacity:1, x:0}}
                             transition={{duration:0.9,delay:0.7, type:"spring", stiffness:130}}
                             className='cursor-pointer'>
-                            <NavLink to="/about" 
-                                onClick={() => navState.setIsNavVisible(!navState.isNavVisible)}
+                            <NavLink to="/about"
+                                onClick={() => {navState.setIsNavVisible(!navState.isNavVisible); window.scrollTo({top:0, behavior:"smooth"})}}
                                 style={({ isActive }) => ({
                                 color: isActive && "#fca319"})}>About</NavLink>
                         </motion.li>
@@ -64,7 +74,7 @@ const Navbar = () => {
                             transition={{duration:0.9,delay:0.9, type:"spring", stiffness:130}}
                             className='cursor-pointer'>
                             <NavLink to="/contact" 
-                                onClick={() => navState.setIsNavVisible(!navState.isNavVisible)}
+                                onClick={() => {navState.setIsNavVisible(!navState.isNavVisible); window.scrollTo({top:0, behavior:"smooth"})}}
                                 style={({ isActive }) => ({
                                 color: isActive && "#fca319"})}>Contact</NavLink>
                         </motion.li>

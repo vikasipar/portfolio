@@ -1,30 +1,50 @@
-import react from 'react';
-import { Helmet } from 'react-helmet-async';
-import Hero from './components/Hero';
-import Projects from './components/Projects';
+import React, {useState} from 'react';
+import Footer from './components/Footer';
+import About from './components/About';
+import Contact from './components/Contact';
+import Page404 from './components/Page404';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import Intro from './components/Intro';
+import Blog from './components/Blog';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
+import { motion, AnimatePresence } from 'framer-motion';
 
-const App = () => {
+function App() {
+  const [loading, setLoading] = useState(true);
+
+  setTimeout(()=> setLoading(false), 1500);
 
   return (
-    <>
-      <Helmet>
-        <title>Vikas Ipar | Frontend Developer</title>
-        <meta name="description" content="Welcome to my portfolio website showcasing my projects and skills." />
-        <meta name="keywords" content="vikas ipar portfolio, projects, frontend developer, React developer, javascript developer, ui developer, web developer, software developer, full stack developer, mern stack developer, animated portfolio, best portfolio, framer motion website, animation, vikas ipar, portfolio, vikas ipar portfolio, modern website, web developer in pune" />
-        <meta name="author" content="Vikas Ipar" />
-        <meta property="og:title" content="Vikas Ipar Portfolio" />
-        <meta property="og:description" content="Welcome to my portfolio website showcasing my projects and skills." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.vikasipar.vercel.app" />
-        <meta property="og:image" content="https://www.vikasipar.vercel.app/static/vikas-ipar-portfolio.png" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Vikas Ipar Portfolio" />
-        <meta name="twitter:description" content="Welcome to my portfolio website showcasing my projects and skills." />
-        <meta name="twitter:image" content="https://www.vikasipar.vercel.app/static/vikas-ipar-portfolio.png" />
-      </Helmet>
-     <Hero />
-     <Projects />
-    </>
+    <div>
+        <BrowserRouter>  
+        {
+        loading? 
+        <AnimatePresence>
+        <motion.div
+        key="intro"
+        initial={{opacity:1}}
+        exit={{opacity:0}}
+        transition={{duration:0, ease:"easeInOut"}}>
+          <Intro/>
+        </motion.div>
+        </AnimatePresence>
+        :
+        <>
+          <Navbar />
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/blog' element={<Blog />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/contact' element={<Contact />} />
+            <Route path='/*' element={<Page404 />} />
+          </Routes>
+          <Analytics />
+          <Footer />
+          </>}
+        </BrowserRouter>
+    </div>
   )
 }
 
