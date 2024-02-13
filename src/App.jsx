@@ -14,7 +14,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 function App() {
   const [loading, setLoading] = useState(true);
 
-  setTimeout(()=> setLoading(false), 1500);
+  setTimeout(()=> setLoading(false), 1300);
 
   return (
     <div>

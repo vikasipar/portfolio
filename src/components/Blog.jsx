@@ -10,7 +10,7 @@ function Blog() {
       url: "https://medium.com/@vikasipar/mastering-api-integration-in-react-a-practical-guide-with-examples-23748d68b3fa",
       title: "Mastering API Integration in React: A Practical Guide with Examples",
       img: "/static/api.png",
-      desc: "What exactly is an API? Well, let's break it down. API stands for Application Programming Interface. Think of it as a bridge",
+      desc: "What exactly is an API? Well, let's break it down. API stands for Application Programming Interface. Think of it as a",
     },
     {
       id: 2,
@@ -68,7 +68,7 @@ function Blog() {
             initial={{y:100}}
             animate={{y:0}}
             transition={{duration: 1, ease:easeIn}}
-            key={data.id} className='w-[88%] md:w-[45%] xl:w-80 mx-auto border border-gray-300 px-2 py-3 rounded-lg shadow-lg hover:shadow-xl'>
+            key={data.id} className='w-[88%] md:w-[45%] xl:w-80 mx-auto border border-gray-300 px-2 py-3 rounded-lg shadow md:shadow-lg hover:shadow-xl'>
             <a href={data.url} target='_blank'>
               <img src={data.img} alt={data.topic} className='aspect-video'/>
               <h2 className='text-xl md::text-2xl text-stone-800 font-semibold my-2'>{data.title}</h2>
