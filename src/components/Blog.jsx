@@ -28,13 +28,22 @@ function Blog() {
       img: "/static/recoil.png",
       desc: "Recoil is a state management library for React that made my life as a developer so much easier. Being an enthusiast delving",
     },
-    // {
-    //   id: 1,
-    //   topic: "",
-    //   title: "",
-    //   img: "",
-    //   desc: "",
-    // },
+    {
+      id: 4,
+      topic: "Router",
+      url: "https://medium.com/@vikasipar/navigating-the-web-with-react-router-d68416bd79c8",
+      title: "Navigating the Web with React Router",
+      img: "/static/router.jpg",
+      desc: "Hey coders! So, you've dipped your toes into the vast ocean of web development, and now you're eyeing that treasure",
+    },
+    {
+      id: 5,
+      topic: "Responsiveness",
+      url: "https://medium.com/@vikasipar/flexbox-the-easiest-path-to-responsive-websites-688415a06c57",
+      title: "Flexbox: The Easiest Path to Responsive Websites",
+      img: "/static/responsive.png",
+      desc: "Hey there! Are you ready to level up your web design game and make your websites look amazing on all devices?",
+    },
   ];
   return (
     <>
