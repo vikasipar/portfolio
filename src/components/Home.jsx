@@ -22,8 +22,10 @@ const Home = () => {
         <meta name="twitter:description" content="Welcome to my portfolio website showcasing my projects and skills." />
         <meta name="twitter:image" content="https://www.vikasipar.vercel.app/static/vikas-ipar.png" />
       </Helmet>
-          <Hero />
-          <Projects />
+      <div className='overflow-x-hidden'>
+        <Hero />
+        <Projects />
+      </div>
     </>
   )
 }

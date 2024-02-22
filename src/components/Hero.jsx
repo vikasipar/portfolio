@@ -8,7 +8,7 @@ const Hero = () => {
   
   return (
     <>
-      <div className='flex flex-wrap w-full xl:h-screen items-center overflow-hidden relative'>
+      <div className='flex flex-wrap w-full xl:h-screen items-center overflow-x-hidden relative'>
 
         <motion.img
         initial={{y:120, scale:0.5}}
