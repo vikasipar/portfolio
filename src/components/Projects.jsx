@@ -69,13 +69,13 @@ const Projects = () => {
           whileInView={{opacity:1, x:0}}
           transition={{duration:1, delay:0.3, type:"spring"}}
           whileHover={{scale:1.06}}
-          className='md:w-[45%] md:ml-auto w-[99%] mb-2 md:mb-0 aspect-video shadow md:drop-shadow border-y md:border-y-2 border-gray-200' src={`${project.img}`} alt={`screenshot of ${project.title}`} />
+          className='md:w-[45%] md:ml-auto w-[99%] mb-2 md:mb-0 aspect-video shadow md:drop-shadow md:border-y-2 border-gray-200' src={`${project.img}`} alt={`screenshot of ${project.title}`} />
 
           <motion.div
           initial={{opacity: 0, x:200}}
           whileInView={{opacity:1, x:0}}
           transition={{duration:1, delay:0.3}} 
-          className={`${project.id%2!==0 ? 'md:w-[42%] mx-auto' : 'md:w-[42%]'} w-[92%] mx-auto`} >
+          className={`${project.id%2!==0 ? 'md:w-[42%] mx-auto' : 'md:w-[42%]'} w-[98%] mx-auto`} >
             <h1 className='font-bold text-2xl md:text-3xl text-[#1f4167]/80'>{project.title}</h1>
             <h3 className='text-base w-[82vw] md:w-auto mx-auto md:text-lg text-[#474646] flex flex-wrap justify-center my-2'>{project.stack.map((tech) => (<span className='px-2 bg-[#ffbb29]/50 border border-[#ffbb29] shadow mx-1 my-[2px] rounded-2xl'>{tech}</span>)) }</h3>
             <p className='text-justify text-[#606570] text-lg'>{project.desc}</p>
@@ -85,13 +85,13 @@ const Projects = () => {
               initial={{scale:1}}
               whileHover={{scale:1.1}}
               transition={{duration:1.4, type:"spring"}}
-              className='px-5 py-1 bg-[#0a1520]/90 text-white rounded flex items-center'>Code Files<FaGithub className='ml-2' /></motion.button></a>
+              className='px-3 md:px-5 py-1 bg-[#0a1520]/90 text-white rounded flex items-center'>Code Files<FaGithub className='ml-2' /></motion.button></a>
               <a href={`${project.live}`} target='_blank'>
               <motion.button 
               initial={{scale:1}}
               whileHover={{scale:1.1}}
               transition={{duration:1.4, type:"spring"}}
-              className='px-5 py-1 rounded bg-[#eca60d] text-white flex items-center'>Live Site<TbWorld className='ml-2 text-lg' /></motion.button></a>
+              className='px-3 md:px-5 py-1 rounded bg-[#eca60d] text-white flex items-center'>Live Site<TbWorld className='ml-2 text-lg' /></motion.button></a>
             </div>
           </motion.div>
        </div>
