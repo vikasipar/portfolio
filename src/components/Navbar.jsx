@@ -41,7 +41,7 @@ const Navbar = () => {
                         <motion.li
                             initial={{opacity:0, x:-100}}
                             whileInView={{opacity:1, x:0}}
-                            transition={{duration:0.9,delay:0.4, type:"spring", stiffness:130}}
+                            transition={{duration:0.9,delay:0.2, type:"spring", stiffness:130}}
                             className='cursor-pointer'>
                             <NavLink to="/" 
                                 onClick={() => {navState.setIsNavVisible(!navState.isNavVisible); window.scrollTo({top:0, behavior:"smooth"})}}
