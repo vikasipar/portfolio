@@ -69,7 +69,7 @@ const Projects = () => {
           whileInView={{opacity:1, x:0}}
           transition={{duration:1, delay:0.3, type:"spring"}}
           whileHover={{scale:1.06}}
-          className='md:w-[45%] md:ml-auto w-[99%] mb-2 md:mb-0 aspect-video shadow md:drop-shadow md:border-y-2 border-gray-200' src={`${project.img}`} alt={`screenshot of ${project.title}`} />
+          className='md:w-[45%] md:ml-auto w-[99%] mb-2 md:mb-0 aspect-video shadow md:drop-shadow md:border-y-2 border-gray-200' src={`${project.img}`} alt={`Screenshot of ${project.title}`} />
 
           <motion.div
           initial={{opacity: 0, x:200}}

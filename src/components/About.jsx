@@ -1,12 +1,10 @@
 import React from 'react';
-import { FaHtml5, FaCss3Alt, FaPhp, FaReact, FaNodeJs, FaGitAlt, FaFreeCodeCamp } from "react-icons/fa";
-import { IoLogoJavascript, IoLogoFirebase, IoExpand, IoDocument } from "react-icons/io5";
-import { SiTailwindcss, SiRedux, SiExpress, SiCplusplus, SiC, SiCoursera, SiUdemy } from "react-icons/si";
+import { FaHtml5, FaCss3Alt, FaPhp, FaReact, FaGitAlt, FaFreeCodeCamp } from "react-icons/fa";
+import { IoLogoJavascript, IoLogoFirebase, IoDocument } from "react-icons/io5";
+import { SiTailwindcss, SiRedux, SiC, SiCoursera, SiUdemy } from "react-icons/si";
 import { TbBrandFramerMotion } from "react-icons/tb";
-import { MdOutlineFullscreen, MdOutlineLocationSearching, MdAutoFixHigh, MdDesignServices } from "react-icons/md";
-import { GiStumpRegrowth, GiEagleHead, GiBookshelf } from "react-icons/gi";
-import { IoMdDoneAll } from "react-icons/io";
-import { RiTeamFill, RiPresentationFill, RiCoreosLine} from "react-icons/ri";
+import { MdDesignServices } from "react-icons/md";
+import { RiPresentationFill, RiCoreosLine} from "react-icons/ri";
 import { FaGofore } from "react-icons/fa6";
 import { GrMysql } from "react-icons/gr";
 import { motion } from 'framer-motion';
@@ -117,42 +115,26 @@ function About() {
         className='text-3xl lg:text-4xl text-[#1f4167] my-5 ml-4 md:ml-auto'>What Are My Skills?</motion.h3>
         <div className='flex flex-col-reverse lg:flex-row'>
           
-          <div className='w-[90%] lg:w-[70%] mx-auto text-lg lg:text-xl'>
+          <div className='w-[97%] md:w-[90%] mx-auto text-lg lg:text-xl'>
             
             <div className='flex flex-wrap justify-around text-[#404242]'>
                 <motion.ul 
                 initial={{y:100, opacity:0}}
                 whileInView={{y:0, opacity:1}}
                 transition={{duration:1.5, delay:0.3}}
-                className='leading-relaxed'>
-                <li className='flex items-center'><FaHtml5 className='mx-5'/>HTML</li>
-                <li className='flex items-center'><FaCss3Alt className='mx-5'/>CSS</li>
-                <li className='flex items-center'><SiTailwindcss className='mx-5'/>Tailwind CSS</li>
-                <li className='flex items-center'><IoLogoJavascript className='mx-5'/>JavaScript</li>
-                <li className='flex items-center'><FaReact className='mx-5'/>React</li>
-              </motion.ul>
-              <motion.ul 
-                initial={{y:100, opacity:0}}
-                whileInView={{y:0, opacity:1}}
-                transition={{duration:1.5, delay:0.3}}
-                className='leading-relaxed'>
-                <li className='flex items-center'><SiRedux className='mx-5'/>Redux/Recoil</li>
-                <li className='flex items-center'><FaNodeJs className='mx-5'/>Node.js</li>
-                <li className='flex items-center'><SiExpress className='mx-5'/>Express.js</li>
-                <li className='flex items-center'><FaPhp className='mx-5'/>PHP</li>
-                <li className='flex items-center'><SiC className='mx-5'/>C Language</li>
-              </motion.ul>
-              <motion.ul 
-              initial={{y:100, opacity:0}}
-              whileInView={{y:0, opacity:1}}
-              transition={{duration:1.5, delay:0.3}}
-              className='leading-relaxed'>
-                
-                <li className='flex items-center'><SiCplusplus className='mx-5'/>C++</li>
-                <li className='flex items-center'><GrMysql className='mx-5'/>MySQL</li>
-                <li className='flex items-center'><IoLogoFirebase className='mx-5'/>Firebase</li>
-                <li className='flex items-center'><FaGitAlt className='mx-5'/>Git/GitHub</li>
-                <li className='flex items-center'><TbBrandFramerMotion className='mx-5'/>Framer Motion</li>
+                className='leading-relaxed flex flex-wrap space-x-2 md:space-x-16 space-y-2 justify-center items-baseline'>
+                <li className='flex items-center'><FaHtml5 className='mx-1 md:mx-5'/>HTML</li>
+                <li className='flex items-center'><FaCss3Alt className='mx-1 md:mx-5'/>CSS</li>
+                <li className='flex items-center'><SiTailwindcss className='mx-1 md:mx-5'/>Tailwind CSS</li>
+                <li className='flex items-center'><IoLogoJavascript className='mx-1 md:mx-5'/>JavaScript</li>
+                <li className='flex items-center'><FaReact className='mx-1 md:mx-5'/>React</li>
+                <li className='flex items-center'><SiRedux className='mx-1 md:mx-5'/>Redux/Recoil</li>
+                <li className='flex items-center'><FaPhp className='mx-1 md:mx-5'/>PHP</li>
+                <li className='flex items-center'><SiC className='mx-1 md:mx-5'/>C Language</li>
+                <li className='flex items-center'><GrMysql className='mx-1 md:mx-5'/>MySQL</li>
+                <li className='flex items-center'><IoLogoFirebase className='mx-1 md:mx-5'/>Firebase</li>
+                <li className='flex items-center'><FaGitAlt className='mx-1 md:mx-5'/>Git/GitHub</li>
+                <li className='flex items-center'><TbBrandFramerMotion className='mx-1 md:mx-5'/>Framer Motion</li>
               </motion.ul>
             </div>
             
