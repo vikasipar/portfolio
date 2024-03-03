@@ -44,6 +44,14 @@ function Blog() {
       img: "/static/responsive.png",
       desc: "Hey there! Are you ready to level up your web design game and make your websites look amazing on all devices?",
     },
+    {
+      id: 6,
+      topic: "npm package",
+      url: "https://medium.com/@vikasipar/enhance-user-experience-in-react-application-a-guide-to-implementing-popup-notifications-4a1eb2c231c9",
+      title: "Enhance User Experience By Implementing Popup Notifications",
+      img: "/static/popupz.jpg",
+      desc: "Popup notifications can greatly enhance the user experience of your application by providing real-time feedback to users.",
+    },
   ];
   return (
     <>

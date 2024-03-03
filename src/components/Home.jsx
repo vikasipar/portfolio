@@ -2,6 +2,7 @@ import react from 'react';
 import { Helmet } from 'react-helmet-async';
 import Hero from './Hero';
 import Projects from './Projects';
+import Skills from './Skills';
 
 const Home = () => {
 
@@ -24,6 +25,7 @@ const Home = () => {
       </Helmet>
       <div className='overflow-x-hidden'>
         <Hero />
+        <Skills/>
         <Projects />
       </div>
     </>
