@@ -11,8 +11,8 @@ const Projects = () => {
         title: "Popupz",
         live: "https://www.npmjs.com/package/popupz",
         github: "https://github.com/vikasipar/popupz",
-        stack: ['React.js', 'Tailwind', 'React-Icons', 'Vite'],
-        desc: "Popupz is a simple and customizable popup notification library designed specifically for React applications. It provides an easy way to display popup notifications with customizable themes and message content. 🍿",
+        stack: ['React.js', 'Tailwind CSS', 'React-Icons', 'Vite'],
+        desc: "Popupz is a simple and customizable popup notification library designed specifically for React applications. It provides an easy way to display popup notifications with customizable themes and message content. Over 1500+ weekly downloads.🍿",
         img: "/static/popupz.png",
     },
     {
@@ -20,7 +20,7 @@ const Projects = () => {
         title: "CoWatch",
         live: "https://cowatch.vercel.app/",
         github: "https://github.com/vikasipar/cowatch",
-        stack: ['React.js', 'Recoil', 'Peerjs', 'Tailwind'],
+        stack: ['React.js', 'Recoil', 'Peerjs', 'Tailwind CSS'],
         desc: "Redefining how users experience content on YouTube! It  can seamlessly watch YouTube videos together with their friends while enjoying integrated video call and screen sharing features. 🚀",
         img: "/static/cowatch.png",
     },
@@ -29,7 +29,7 @@ const Projects = () => {
       title: "E-commerce Application",
       live: "https://ezmartshop.vercel.app/",
       github: "https://github.com/vikasipar/ecommerce-app",
-      stack: ['React.js', 'Redux', 'Tailwind', 'Firebase', 'FakeStoreAPI'],
+      stack: ['React.js', 'Redux', 'Tailwind CSS', 'Firebase', 'FakeStoreAPI'],
       desc: "It imulates a real-world shopping experience with dynamic components for intuitive product listing and filtering. Ensured seamless cart operations, secure user authentication, and more. 🛒",
       img: "/static/ezmart.png",
     },
@@ -38,7 +38,7 @@ const Projects = () => {
         title: "Social Media App",
         live: "https://ezgram.vercel.app/",
         github: "https://github.com/vikasipar/social-media-app",
-        stack: ['React.js', 'Tailwind', 'Firebase', 'Recoil'],
+        stack: ['React.js', 'Tailwind CSS', 'Firebase', 'Recoil'],
         desc: "It facilitates a vibrant social experience with features such as user authentication, posting content, liking, commenting, friend suggestions, and viewing stories. 📱",
         img: "/static/ezgram.png",
       },
@@ -56,7 +56,7 @@ const Projects = () => {
       title: "Superhero App",
       live: "https://mysuperheros.vercel.app/",
       github: "https://github.com/vikasipar/superhero-app",
-      stack: ['React.js', 'Tailwind', 'Superhero API'],
+      stack: ['React.js', 'Tailwind CSS', 'Superhero API'],
       desc: "Dive into the world of superheroes! Developed a dynamic web application that showcases my skills in frontend development and API integration. 🦸",
       img: "/static/mysuperheros.png",
     },
@@ -72,24 +72,29 @@ const Projects = () => {
         className='w-full pl-2 lg:pl-32 text-4xl mt-9 lg:mt-20 xl:mt-9 md:mt-0 md:text-5xl xl:text-6xl text-[#1f4167] ml-4 md:ml-auto overflow-hidden'>Projects</motion.h1>
       {
       projectdata.map(project => (
-        <div key={`${project.id}`} className='w-[83vw] md:flex items-center mx-auto text-base lg:ml-36 py-2 mb-10 md:mb-9 my-3 md:my-14 lg:mb-10 xl:mb-5 overflow-hidden'>
+        <div key={`${project.id}`} className='w-[90vw] md:w-[95%] md:flex md:justify-center md:space-x-9 items-center mx-auto text-base lg:ml-20 py-2 mb-10 md:mb-9 my-3 md:my-14 lg:mb-10 xl:mb-5 overflow-hidden'>
+          
+          <h1 className='block md:hidden font-bold text-2xl mb-2 md:text-3xl text-[#eca60d]'>{project.title}</h1>
 
+          <a href={`${project.live}`} target='_blank'
+          className='md:w-[40%] lg:w-[42%] w-[99%] mb-2 md:mb-0 aspect-video shadow md:drop-shadow md:border-y-2 border-gray-200'>
           <motion.img 
           initial={{scale: 0.92}}
           whileInView={{scale:1}}
           transition={{duration:1, delay:0.1}}
           whileHover={{scale:1.06}}
           viewport={{once:true}}
-          className='md:w-[45%] md:ml-auto w-[99%] mb-2 md:mb-0 aspect-video shadow md:drop-shadow md:border-y-2 border-gray-200' src={`${project.img}`} alt={`Screenshot of ${project.title}`} />
+          src={`${project.img}`} alt={`Screenshot of ${project.title}`} />
+          </a>
 
           <motion.div
           initial={{scale: 0.92}}
           whileInView={{scale:1}}
           transition={{duration:1, delay:0.1}}
           viewport={{once:true}}
-          className={`${project.id%2!==0 ? 'md:w-[42%] mx-auto' : 'md:w-[42%]'} w-[98%] mx-auto`} >
-            <h1 className='font-bold text-2xl md:text-3xl text-[#1f4167]/80'>{project.title}</h1>
-            <h3 className='text-base w-[82vw] md:w-auto mx-auto md:text-lg text-[#474646] flex flex-wrap justify-center my-2'>{project.stack.map((tech) => (<span className='px-2 bg-[#ffbb29]/50 border border-[#ffbb29] shadow mx-1 my-[2px] rounded-2xl'>{tech}</span>)) }</h3>
+          className='w-[95%] md:w-[35%] lg:w-[40%]' >
+            <h1 className='hidden mb-5 md:block font-bold text-2xl md:text-3xl text-[#1f4167]/80'>{project.title}</h1>
+            <h3 className='text-sm w-[89vw] md:w-auto mx-auto md:text-base text-[#474646] flex flex-wrap justify-center lg:justify-around my-2'>{project.stack.map((tech) => (<span className='px-2 bg-[#ffbb29]/40 border border-[#ffbb29] md:shadow mx-1 my-[2px] rounded-2xl'>{tech}</span>)) }</h3>
             <p className='text-justify text-[#606570] text-lg'>{project.desc}</p>
             <div className='md:space-x-9 mt-2 md:mt-5 flex flex-wrap justify-around text-base md:text-lg'>
               <a href={`${project.github}`} target='_blank'>

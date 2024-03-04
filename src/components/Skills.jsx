@@ -15,13 +15,13 @@ function Skills() {
         whileInView={{y:0, opacity:1}}
         transition={{duration:1}}
         viewport={{once:true}}
-        className='block md:hidden w-full pl-2 lg:pl-32 mt-9 mb-5 lg:mt-20 xl:mt-9 md:mt-0 md:text-5xl xl:text-6xl text-[#1f4167] ml-4 md:ml-auto overflow-hidden'>Skills</motion.h1>
+        className='w-full pl-2 lg:pl-32 text-4xl mt-9 mb-3 lg:mt-20 xl:mt-9 md:mt-0 md:text-5xl xl:text-6xl text-[#1f4167] ml-4 md:ml-auto overflow-hidden'>Skills</motion.h1>
         <motion.ul 
         initial={{scale:0.9}}
         whileInView={{scale:1}}
         transition={{duration:0.5}}
         viewport={{once:true}}
-        className='lg:ml-36 w-[83vw] flex flex-wrap items-center justify-around mx-auto text-2xl md:text-3xl text-[#e6b367] space-x-5'>
+        className='lg:ml-36 w-[83vw] flex flex-wrap items-center justify-around mx-auto text-2xl md:text-3xl text-[#e6b367] space-x-5 space-y-2'>
             <li><FaHtml5 className='hover:text-[#fca319]' title="HTML"/></li>
             <li><FaCss3Alt className='hover:text-[#fca319]' title='CSS'/></li>
             <li><SiTailwindcss className='hover:text-[#fca319]' title='Tailwind CSS'/></li>
