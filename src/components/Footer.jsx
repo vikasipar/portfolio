@@ -20,7 +20,7 @@ function Footer() {
                     <motion.li whileHover={{x:9}} transition={{duration:0.4}} className='cursor-pointer hover:text-[#fcb419]'><Link to="/about" onClick={() => window.scrollTo({top:0, behavior:"smooth"})}>About</Link></motion.li>
                     <motion.li whileHover={{x:9}} transition={{duration:0.4}} className='cursor-pointer hover:text-[#fcb419]'><Link to="/contact" onClick={() => window.scrollTo({top:0, behavior:"smooth"})}>Contact</Link></motion.li>
                     <motion.li whileHover={{x:9}} transition={{duration:0.4}} className='cursor-pointer hover:text-[#fcb419]'>
-                        <a href='https://drive.google.com/file/d/1TOKr8XDR9JiZQ5RmEDe-6GvwCIj7DNtb/view?usp=sharing' target='_blank'>Resume</a>
+                        <a href='https://drive.google.com/file/d/1tZ0_cq2UV9PF-_yYBUwhwzZCDJId8e-S/view?usp=sharing' target='_blank'>Resume</a>
                     </motion.li>
                 </ul>
             </div>

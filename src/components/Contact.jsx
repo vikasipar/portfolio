@@ -5,12 +5,14 @@ import { FaSquareGithub } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import emailjs from '@emailjs/browser';
 import { Helmet } from 'react-helmet-async';
+import { usePopz } from 'popupz';
 
 function Contact() {
+    const {popz} = usePopz();
 
     const sendEmail = (e) => {
         e.preventDefault();
-        alert("Message Sent.");
+        popz("", "success","Message Sent!", "false");
         emailjs.sendForm(import.meta.env.VITE_SEVICEID, import.meta.env.VITE_TEMPLATEID, e.target, import.meta.env.VITE_EMAILJS_PUBLICKEY);
     }
 

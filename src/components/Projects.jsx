@@ -74,7 +74,7 @@ const Projects = () => {
       projectdata.map(project => (
         <div key={`${project.id}`} className='w-[90vw] md:w-[95%] md:flex md:justify-center md:space-x-9 items-center mx-auto text-base lg:ml-20 py-2 mb-10 md:mb-9 my-3 md:my-14 lg:mb-10 xl:mb-5 overflow-hidden'>
           
-          <h1 className='block md:hidden font-bold text-2xl mb-2 md:text-3xl text-[#eca60d]'>{project.title}</h1>
+          <h1 className='block md:hidden font-bold text-2xl mb-2 md:text-3xl text-[#fca319]'>{project.title}</h1>
 
           <a href={`${project.live}`} target='_blank'
           className='md:w-[40%] lg:w-[42%] w-[99%] mb-2 md:mb-0 aspect-video shadow md:drop-shadow md:border-y-2 border-gray-200'>
