@@ -30,7 +30,7 @@ const Projects = () => {
       live: "https://ezmartshop.vercel.app/",
       github: "https://github.com/vikasipar/ecommerce-app",
       stack: ['React.js', 'Redux', 'Tailwind CSS', 'Firebase', 'FakeStoreAPI'],
-      desc: "It imulates a real-world shopping experience with dynamic components for intuitive product listing and filtering. Ensured seamless cart operations, secure user authentication, and more. 🛒",
+      desc: "It simulates a real-world shopping experience with dynamic components for intuitive product listing and filtering. Ensured seamless cart operations, secure user authentication, and more. 🛒",
       img: "/static/ezmart.png",
     },
     {
@@ -72,12 +72,12 @@ const Projects = () => {
         className='w-full pl-2 lg:pl-32 text-4xl mt-9 lg:mt-20 xl:mt-9 md:mt-0 md:text-5xl xl:text-6xl text-[#1f4167] ml-4 md:ml-auto overflow-hidden'>Projects</motion.h1>
       {
       projectdata.map(project => (
-        <div key={`${project.id}`} className='w-[90vw] md:w-[95%] md:flex md:justify-center md:space-x-9 items-center mx-auto text-base lg:ml-20 py-2 mb-10 md:mb-9 my-3 md:my-14 lg:mb-10 xl:mb-5 overflow-hidden'>
-          
-          <h1 className='block md:hidden font-bold text-2xl mb-2 md:text-3xl text-[#fca319]'>{project.title}</h1>
+        <div key={`${project.id}`} className='w-[90vw] md:w-[95%] md:flex md:justify-center md:space-x-9 items-center mx-auto text-base lg:ml-20 py-2 mb-10 md:mb-9 my-3 md:my-14 lg:mb-10 xl:mb-5 overflow-hidden border md:border-0 border-gray-300/50 px-7 md:px-0 pt-3 md:pt-0 pb-10 md:pb-0 rounded-lg md:rounded-none shadow md:shadow-none'>
+          <div className='md:w-[40%] lg:w-[42%] w-[99%] mb-2 md:mb-0 '>
+          <h1 className='block lg:hidden font-bold text-2xl mb-2 text-[#fca319]'>{project.title}</h1>
 
           <a href={`${project.live}`} target='_blank'
-          className='md:w-[40%] lg:w-[42%] w-[99%] mb-2 md:mb-0 aspect-video shadow md:drop-shadow md:border-y-2 border-gray-200'>
+          className='aspect-video shadow md:drop-shadow md:border-y-2 border-gray-200'>
           <motion.img 
           initial={{scale: 0.92}}
           whileInView={{scale:1}}
@@ -86,6 +86,7 @@ const Projects = () => {
           viewport={{once:true}}
           src={`${project.img}`} alt={`Screenshot of ${project.title}`} />
           </a>
+          </div>
 
           <motion.div
           initial={{scale: 0.92}}
@@ -93,22 +94,22 @@ const Projects = () => {
           transition={{duration:1, delay:0.1}}
           viewport={{once:true}}
           className='w-[95%] md:w-[35%] lg:w-[40%]' >
-            <h1 className='hidden mb-5 md:block font-bold text-2xl md:text-3xl text-[#1f4167]/80'>{project.title}</h1>
-            <h3 className='text-sm w-[89vw] md:w-auto mx-auto md:text-base text-[#474646] flex flex-wrap justify-center lg:justify-around my-2'>{project.stack.map((tech) => (<span className='px-2 bg-[#ffbb29]/40 border border-[#ffbb29] md:shadow mx-1 my-[2px] rounded-2xl'>{tech}</span>)) }</h3>
-            <p className='text-justify text-[#606570] text-lg'>{project.desc}</p>
-            <div className='md:space-x-9 mt-2 md:mt-5 flex flex-wrap justify-around text-base md:text-lg'>
+            <h1 className='hidden mb-5 lg:block font-bold text-2xl lg:text-3xl text-[#1f4167]/80'>{project.title}</h1>
+            <h3 className='text-sm w-full lg:w-auto mx-auto lg:text-base text-[#474646] flex flex-wrap justify-center lg:justify-around my-2'>{project.stack.map((tech) => (<span className='px-[4.5px] sm:px-2 bg-[#ffbb29]/40 border border-[#ffbb29] md:shadow mx-[1.5px] sm:mx-1 my-[2px] rounded-2xl'>{tech}</span>)) }</h3>
+            <p className='text-justify w-[99%] mx-auto text-[#606570] text-base lg:text-lg'>{project.desc}</p>
+            <div className='space-x-[2px] lg:space-x-9 mt-2 lg:mt-5 flex flex-wrap justify-around text-sm sm:text-base lg:text-lg'>
               <a href={`${project.github}`} target='_blank'>
               <motion.button 
               initial={{scale:1}}
               whileHover={{scale:1.1}}
               transition={{duration:1.4, type:"spring"}}
-              className='px-3 md:px-5 py-1 bg-[#0a1520]/90 text-white rounded flex items-center'>Code Files<FaGithub className='ml-2' /></motion.button></a>
+              className='mb-1 px-[6px] sm:px-3 lg:px-5 py-1 bg-[#0a1520]/90 text-white rounded flex items-center'>Code Files<FaGithub className='ml-2' /></motion.button></a>
               <a href={`${project.live}`} target='_blank'>
               <motion.button 
               initial={{scale:1}}
               whileHover={{scale:1.1}}
               transition={{duration:1.4, type:"spring"}}
-              className='px-3 md:px-5 py-1 rounded bg-[#eca60d] text-white flex items-center'>Live Site<TbWorld className='ml-2 text-lg' /></motion.button></a>
+              className='mb-1 px-[6px] sm:px-3 lg:px-5 py-1 rounded bg-[#eca60d] text-white flex items-center'>Live Site<TbWorld className='ml-2 text-lg' /></motion.button></a>
             </div>
           </motion.div>
        </div>
